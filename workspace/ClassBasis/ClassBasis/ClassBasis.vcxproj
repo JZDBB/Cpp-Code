@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EF49F046-3BF9-4530-8E26-F52DCAD7FC11}</ProjectGuid>
-    <RootNamespace>Basis</RootNamespace>
+    <ProjectGuid>{F8D1743F-B86B-4793-A5E5-DCF0AAC8E743}</ProjectGuid>
+    <RootNamespace>ClassBasis</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,15 +115,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CDROM.cpp" />
     <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="COMPUTER.cpp" />
+    <ClCompile Include="CPU.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="RAM.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CDROM.h" />
     <ClInclude Include="Clock.h" />
+    <ClInclude Include="COMPUTER.h" />
+    <ClInclude Include="CPU.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="RAM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

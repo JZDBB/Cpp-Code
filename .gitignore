@@ -1,1 +1,10 @@
-workspace/Basis/.vs/
+workspace/ClassBasis/.vs/
+*.log
+*.obj
+*.pdb
+*.idb
+*.tlog
+*.exe
+*.ilk
+
+

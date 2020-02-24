@@ -15,27 +15,51 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="CDROM.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Clock.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Point.cpp">
+    <ClCompile Include="COMPUTER.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CPU.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Line.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RAM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CDROM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="Clock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="COMPUTER.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CPU.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Point.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Line.h">
+    <ClInclude Include="RAM.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,6 +2,10 @@
 //#include"Clock.h"
 #include "Point.h"
 #include"Line.h"
+#include"COMPUTER.h"
+#include"CPU.h"
+#include"RAM.h"
+#include"CDROM.h"
 using namespace std;
 
 // 引用传递
@@ -70,11 +74,28 @@ int main()
 	cout << b.getX() << endl;*/
 
 	// 组合类
-	Point p1(1, 1), p2(4, 5);
+	/*Point p1(1, 1), p2(4, 5);
 	Line line(p1, p2);
 	Line line2(line);
 	cout << "line length: " <<line.getLen()<< endl;
-	cout << "line2 length: " << line2.getLen() << endl;
+	cout << "line2 length: " << line2.getLen() << endl;*/
+
+	// 组合例子
+	CPU a(P6, 300, 2.8);
+	a.run(); a.stop();
+	cout << "*****************\n";
+
+	RAM b(DDR3, 1600, 8);
+	b.run(); b.stop();
+	cout << "*****************\n";
+
+	CDROM c(SATA, external, 23);
+	c.run(); c.stop();
+	cout << "*****************\n";
+
+	COMPUTER com(a, b, c, 1080, 512);
+	com.Run(); com.Stop();
+	cout << "*****************\n";
 
 	return 0;
 }
