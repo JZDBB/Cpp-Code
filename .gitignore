@@ -1,4 +1,5 @@
 workspace/ClassBasis/.vs/
+workspace/FuncBasis/.vs/
 *.log
 *.obj
 *.pdb
