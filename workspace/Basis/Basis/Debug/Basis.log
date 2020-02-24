@@ -1,0 +1,5 @@
+﻿  Line.cpp
+c:\users\yn\desktop\c++\workspace\basis\basis\line.cpp(13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  main.cpp
+  正在生成代码...
+  Basis.vcxproj -> C:\Users\yn\Desktop\C++\workspace\Basis\Debug\Basis.exe
