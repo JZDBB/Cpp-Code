@@ -43,21 +43,29 @@ int main()
 	cout << "line2 length: " << line2.getLen() << endl;*/
 
 	// 组合例子
-	CPU a(P6, 300, 2.8);
-	a.run(); a.stop();
-	cout << "*****************\n";
+	//CPU a(P6, 300, 2.8);
+	//a.run(); a.stop();
+	//cout << "*****************\n";
+	//RAM b(DDR3, 1600, 8);
+	//b.run(); b.stop();
+	//cout << "*****************\n";
+	//CDROM c(SATA, external, 23);
+	//c.run(); c.stop();
+	//cout << "*****************\n";
+	//COMPUTER com(a, b, c, 1080, 512);
+	//com.Run(); com.Stop();
+	//cout << "*****************\n";
 
-	RAM b(DDR3, 1600, 8);
-	b.run(); b.stop();
-	cout << "*****************\n";
 
-	CDROM c(SATA, external, 23);
-	c.run(); c.stop();
-	cout << "*****************\n";
+	// 静态成员
+	Point::showCount();
+	Point a(4, 5);
+	cout << "Point A:" << a.getX() << "," << a.getY() << endl;
+	Point::showCount();
 
-	COMPUTER com(a, b, c, 1080, 512);
-	com.Run(); com.Stop();
-	cout << "*****************\n";
+	Point b(a);
+	cout << "Point B" << b.getX() << "," << b.getY() << endl;
+	Point::showCount();
 
 	return 0;
 }

@@ -68,7 +68,7 @@ Clock(int newH, int newM, int newS):hour(newH),minute(newM),second(newS){}
 Clock::Clock(0,0,0){}
 ```
 
-## 类组合
+### 类组合
 
 - 类似于部件组装，将一些类作为新定义类的对象，需要对本类和对象成员初始化。
 
@@ -82,7 +82,7 @@ Clock::Clock(0,0,0){}
     class B{public:void g(A a)}
     ```
 
-## 结构体
+### 结构体
 
 特殊的类，默认公有
 ```C++
@@ -94,7 +94,7 @@ struct Student{
 }
 ```
 
-## 联合体
+### 联合体
 
 联合体目的在于存储空间共用，公有、私有、保护成员共用一个内存单元，不能同时有效
 
@@ -114,7 +114,7 @@ ExamInfo(string name, bool pass):name(name),mode(PASS),pass(pass){}
 ExamInfo(string name, int percent):name(name),mode(PERCENTAGE),percent(percent){}
 ```
 
-## 枚举类
+### 枚举类
 
 优势：强作用域，
 
@@ -126,11 +126,5 @@ Type::General
 enum class Side{Right, Left}
 enum class Thing{Right, Wrong} // 变量名不冲突
 ```
-
-
-
-
-
-
 
 
