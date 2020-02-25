@@ -175,3 +175,16 @@ public:
 - `#if 程序正文1 elif 程序正文2  else 程序正文3 #endif` 条件编译指令
 - `ifdef` 和 `ifndef` 是否定义了某个标识符
 
+PS：为了避免重复包含在使用编译预处理指令
+
+#### demo
+
+`client.h`
+
+```C++
+#ifndef CLIENT_H_
+#define CLIENT_H_
+程序正文
+#endif
+```
+
