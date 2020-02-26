@@ -3,6 +3,7 @@
 class ArrayOfPoint {
 public:
 	ArrayOfPoint(int size);
+	ArrayOfPoint(const ArrayOfPoint& pointsArray);
 	~ArrayOfPoint();
 	Point& element(int index);
 private:

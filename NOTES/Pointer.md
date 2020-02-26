@@ -170,12 +170,6 @@ int(*cp)[9][8] = new int[7][9][8];// cp 第一个[9][8]数组的头,这是三位
 
 
 
-
-
-
-
-
-
 ## 数组和指针
 
 定义和赋值：
@@ -198,3 +192,41 @@ int *pLine[3]={line1,line2,line3};
 
 <img src="\img\Pointer.png" height=250px>
 
+
+
+## Vector
+
+可以容纳任何类型数组，自动创建和删除数组下标越界检查。
+
+- 定义：`vector<元素类型> 数组对象名[对象长度]` 
+- 引用：`vector对象名[下标表达式]`
+- 获取数组长度：`vector对象名.size()`
+
+```C++
+vector<double> arr(n);// vector定义
+for(unsigned i=0;i<n;i++) cin>>arr[i];
+cout << "Average = "<<average(arr)<<endl;
+
+double average(const vector<double> &arr){
+    double sum = 0;
+    for (unsigned i=0;i<arr.size();i++)
+        sum +=arr[i];
+    return sum/arr.size();
+}
+// 基于范围的for循环配合auto
+int main(){
+    vector<int> v= {1,2,3};
+    for (auto i=v.begin();i!= v.end();i++)
+        cout<<*i<<endl;    
+    for(auto e:v)
+        cout<<e<<endl;
+    return 0;
+}
+```
+
+
+
+## String
+
+- C风格的：`char str[3] = {'o','k','!'};` 容易产生长度下标越界等问题
+- String类：可以做拼接、赋值、关系等，可以访问下标，计算长度，输入整行等。

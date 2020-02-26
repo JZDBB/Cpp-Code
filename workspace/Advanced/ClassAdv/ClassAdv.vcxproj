@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C75AD7B7-3CC8-4003-A68B-B27BB7CBC2E2}</ProjectGuid>
-    <RootNamespace>PointerBasis</RootNamespace>
+    <ProjectGuid>{D4D2B376-45A0-4ADA-B995-CF14F5987530}</ProjectGuid>
+    <RootNamespace>ClassAdv</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,15 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ArrayOfPoint.cpp" />
-    <ClCompile Include="IntNum.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Point.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ArrayOfPoint.h" />
-    <ClInclude Include="IntNum.h" />
-    <ClInclude Include="Point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
