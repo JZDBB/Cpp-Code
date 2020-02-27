@@ -205,6 +205,8 @@ enum class Thing{Right, Wrong} // 变量名不冲突
 
 动态绑定虚表示意图：
 
+<img src="img/虚表示意图.png" height=250px>
+
 
 
 
