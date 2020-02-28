@@ -5,6 +5,8 @@
 #include<queue>
 #include<string>
 #include<list>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 //#include"LinkedList.h"
@@ -60,13 +62,6 @@ void mySort(InputIterator first, InputIterator last, OutputIterator result) {
 	//将s序列通过输出迭代器输出
 	copy(s.begin(), s.end(), result);
 }
-
-
-// 模拟细胞分裂 queue
-
-class Cell;
-
-
 
 
 int main() {
