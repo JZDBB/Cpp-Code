@@ -1,25 +1,25 @@
 #pragma once
-
-const int SPLIT_TIME_MIN = 500;		//细胞分裂最短时间
-const int SPLIT_TIME_MAX = 2000;	//细胞分裂最长时间
+#ifndef CELL_H_
+#define CELL_H_
+#include <queue>
+#include<iostream>
+using namespace std;
 
 class Cell;
-priority_queue<Cell> cellQueue;
+extern priority_queue<Cell> cellQueue;
 
-class Cell {	//细胞类
+class Cell {
 private:
-	static int count;	//细胞总数
-	int id;		//当前细胞编号
-	int time;	//细胞分裂时间
+	static int count;	//总数
+	int id;		//编号
+	int time;	//分裂时间
 public:
 	Cell(int birth);
-	int getId() const;	//得到细胞编号
-	int getSplitTime() const;	//得到细胞分裂时间
-	bool operator < (const Cell& s) const;	//定义“<”
-
-	//细胞分裂
+	int getId() const;	
+	int getSplitTime() const;	
+	bool operator < (const Cell& s) const;	
 	void split() const;
 	~Cell();
 };
-int Cell::count = 0;
 
+#endif // !CELL_H_
