@@ -8,6 +8,10 @@ public:
 	double getBalance() const { return balance; }
 	static double getTotal() { return total; }
 	void show() const;
+	// 虚函数声明用以子类调用
+	virtual void deposit(const Date& date, double amount, const std::string &desc);
+	virtual void withdraw(const Date& date, double amount, const std::string &desc); //取出现金
+	virtual void settle(const Date &date);
 
 private:
 	std::string id;

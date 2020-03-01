@@ -22,6 +22,18 @@ void Account::show() const
 	cout << id << "\tBalance: " << balance;
 }
 
+void Account::deposit(const Date & date, double amount, const std::string & desc)
+{
+}
+
+void Account::withdraw(const Date & date, double amount, const std::string & desc)
+{
+}
+
+void Account::settle(const Date & date)
+{
+}
+
 void Account::record(const Date &date, double amount, const std::string & desc)
 {
 	amount = floor(amount * 100 + 0.5) / 100;	//保留小数点后两位
