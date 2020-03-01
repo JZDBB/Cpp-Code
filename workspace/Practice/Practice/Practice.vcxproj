@@ -117,7 +117,8 @@
   <ItemGroup>
     <ClInclude Include="Account.h" />
     <ClInclude Include="Accumulator.h" />
-    <ClInclude Include="date.hpp" />
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="date.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Account.cpp" />

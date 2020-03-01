@@ -7,11 +7,11 @@ public:
 	const std::string &getId() const { return id; }
 	double getBalance() const { return balance; }
 	static double getTotal() { return total; }
-	void show() const;
+	virtual void show() const;
 	// 虚函数声明用以子类调用
-	virtual void deposit(const Date& date, double amount, const std::string &desc);
-	virtual void withdraw(const Date& date, double amount, const std::string &desc); //取出现金
-	virtual void settle(const Date &date);
+	virtual void deposit(const Date& date, double amount, const std::string &desc) = 0;
+	virtual void withdraw(const Date& date, double amount, const std::string &desc) = 0; //取出现金
+	virtual void settle(const Date &date) = 0;
 
 private:
 	std::string id;
@@ -30,11 +30,11 @@ class SavingsAccount: public Account{
 public:
 	SavingsAccount(const Date& date, const string &id, double rate);
 	~SavingsAccount();
-	void deposit(const Date& date, double amount, const std::string &desc); //存入现金
-	void withdraw(const Date& date, double amount, const std::string &desc); //取出现金
+	virtual void deposit(const Date& date, double amount, const std::string &desc); //存入现金
+	virtual void withdraw(const Date& date, double amount, const std::string &desc); //取出现金
 	//结算利息，每年1月1日调用一次该函数
-	void settle(const Date &date);
-	void show() const;
+	virtual void settle(const Date &date);
+	virtual void show() const;
 
 private:
 	Accumulator acc;
@@ -51,11 +51,11 @@ public:
 	double getRate() const { return rate; }
 	double getFee() const { return fee; }
 	double getAvailableCredit() const;
-	void deposit(const Date &date, double amount, const std::string &desc); //存入现金
-	void withdraw(const Date &date, double amount, const std::string &desc); //取出现金
+	virtual void deposit(const Date &date, double amount, const std::string &desc); //存入现金
+	virtual void withdraw(const Date &date, double amount, const std::string &desc); //取出现金
 	//结算利息，每年1月1日调用一次该函数
-	void settle(const Date &date);
-	void show() const;
+	virtual void settle(const Date &date);
+	virtual void show() const;
 
 private:
 	Accumulator acc;

@@ -1,7 +1,5 @@
 #include "Accumulator.h"
 
-
-
 Accumulator::Accumulator(const Date &date, double value):lastDate(date), value(value), sum(0){}
 
 Accumulator::~Accumulator(){}
