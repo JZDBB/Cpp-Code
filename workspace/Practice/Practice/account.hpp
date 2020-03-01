@@ -6,7 +6,6 @@
 
 
 class SavingsAccount //储蓄账户类
-
 {
     
 private:
@@ -34,7 +33,7 @@ private:
     
     {
         
-        return accumulation + balance*date.distance(lastDate);
+		return accumulation + balance * date.distance(lastDate);
         
     }
     
@@ -57,13 +56,9 @@ public:
     void withdraw(const Date &date, double amount,const std::string &desc); //取出现金
     
     //结算利息，每年1月1日调用一次该函数
-    
     void settle(const Date &date);
     
     //显示账户信息
-    
-    
-    
     void show() const;
     
 };

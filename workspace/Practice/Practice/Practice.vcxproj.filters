@@ -15,22 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="account.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="date.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Accumulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Account.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="date.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="account.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="date.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <ClCompile Include="Accumulator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Account.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

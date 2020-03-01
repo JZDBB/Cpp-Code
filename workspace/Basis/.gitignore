@@ -1,4 +1,7 @@
 .vs/
 Debug/
-
-
+*.obj
+*.idb
+*.log
+*.pdb
+*.tlog
