@@ -1,6 +1,9 @@
 #pragma once
 #include<string>
 #include"Accumulator.h"
+#include"date.h"
+#include<map>
+
 class Account{
 public:
 	~Account();
@@ -23,6 +26,28 @@ protected: // 便于派生类访问调用
 	void record(const Date &date, double amount, const std::string &desc);
 	void error(const std::string &msg)const;
 };
+
+class AccountRecord{ // 账目记录
+public:
+	AccountRecord();
+	~AccountRecord();
+
+private:
+	Date date;
+	const Account *account;
+	double amount;
+	double balance;
+	std::string desc;
+};
+
+
+AccountRecord::AccountRecord()
+{
+}
+
+AccountRecord::~AccountRecord()
+{
+}
 
 
 // 储蓄卡类
