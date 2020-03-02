@@ -2,10 +2,16 @@
 #include<cstdlib>
 #include<cmath>
 #include<string>
+#include<algorithm> // for_each 批量删除账户
+#include<vector>
 using namespace std;
 #include "Account.h"
 #include "date.h"
-#include"Array.h"
+// #include"Array.h"
+
+struct deleter {// 该结构体在传递给for_each可以对一定区间的指针进行删除
+	template <class T> void operator () (T* p) { delete p; }
+};
 
 
 int main(){
@@ -16,8 +22,11 @@ int main(){
 	CreditAccount ca(date, "C04237348", 10000, 0.0005, 50);
 	Account *accounts[] = { &sa1, &sa2, &ca };
 	const int n = sizeof(accounts)/sizeof(Account*);*/
-	Array<Account *> accounts(0);	//创建账户数组，元素个数为0，动态分配
-	cout << "(a)add new account (d)deposit (w)withdraw (s)show (c)change day (n)next mouth (e)exit" << endl;
+
+	// Array<Account *> accounts(0);	//创建账户数组，元素个数为0，动态分配
+
+	vector<Account *> accounts(0);
+	cout << "(a)add new account (d)deposit (w)withdraw (s)show (c)change day (n)next mouth (q)query (e)exit" << endl;
 
 	char cmd;
 	do{
@@ -28,6 +37,7 @@ int main(){
 		string desc, id;
 		char type;
 		Account* account;
+		Date date1, date2;
 
 		cin >> cmd;
 		switch (cmd){
@@ -40,8 +50,9 @@ int main(){
 				cin >> credit >> rate >> fee;
 				account = new CreditAccount(date, id, credit, rate, fee);
 			}
-			accounts.resize(accounts.getSize() + 1);
-			accounts[accounts.getSize() - 1] = account;
+			/*accounts.resize(accounts.getSize() + 1);
+			accounts[accounts.getSize() - 1] = account;*/
+			accounts.push_back(account); // vector动态添加
 			break;
 		case 'd':
 			cin >> index >> amount;
@@ -54,7 +65,7 @@ int main(){
 			accounts[index]->withdraw(date, amount, desc);
 			break;
 		case 's':
-			for (int i = 0; i < accounts.getSize(); i++){
+			for (size_t i = 0; i < accounts.size(); i++){
 				cout << "[" << i << "] ";
 				accounts[i]->show();
 				cout << endl;
@@ -74,12 +85,21 @@ int main(){
 				date = Date(date.getYear() + 1, 1, 1);
 			else
 				date = Date(date.getYear(), date.getMonth() + 1, 1);
+			for (vector<Account*>::iterator iter = accounts.begin(); iter != accounts.end(); ++iter)
+				(*iter)->settle(date); // 迭代器记录
+			break;
+		case 'q':	//查询一段时间内的账目
+			date1 = Date::read();
+			date2 = Date::read();
+			Account::query(date1, date2);
 			break;
 		}
 	} while (cmd != 'e');
+	
+	for_each(accounts.begin(), accounts.end(), deleter());
 
-	for (int i = 0; i < accounts.getSize(); i++)
-		delete accounts[i];
+	/*for (int i = 0; i < accounts.getSize(); i++)
+		delete accounts[i];*/
     
     return 0;
 }

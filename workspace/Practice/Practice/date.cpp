@@ -2,11 +2,14 @@
 #include<cstdlib>
 #include<cmath>
 using namespace std;
-#include "date.hpp"
+#include "date.h"
 
 namespace
 {
     const int DAYS_BEFORE_MONTH[] = {0,31,59,90,120,151,181,212,243,273,304,334,365 };
+}
+Date::Date()
+{
 }
 Date::Date(int year, int month, int day) :year(year), month(month), day(day) {
     if (day <= 0 || day > getMaxDay()) {
@@ -19,6 +22,13 @@ Date::Date(int year, int month, int day) :year(year), month(month), day(day) {
     totalDays = year * 365 + years / 4 - years / 100 + years / 400 + DAYS_BEFORE_MONTH[month - 1] + day;
     if (isLeapYear() && month > 2) totalDays++;
 }
+Date Date::read(){
+	int year, month, day;
+	char c1, c2;
+	cin >> year >> c1 >> month >> c2 >> day;
+	return Date(year, month, day);
+}
+
 int Date::getMaxDay()const {
     if (isLeapYear() && month == 2)
         return 29;

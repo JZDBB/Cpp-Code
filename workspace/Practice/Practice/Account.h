@@ -4,6 +4,24 @@
 #include"date.h"
 #include<map>
 
+class Account;
+
+class AccountRecord { // 账目记录
+public:
+	AccountRecord(const Date &date, const Account *account, double amount, double balance, const std::string& desc);
+	~AccountRecord();
+	void show() const;
+
+private:
+	Date date;
+	const Account *account;
+	double amount;
+	double balance;
+	std::string desc;
+};
+
+typedef std::multimap<Date, AccountRecord> RecordMap;
+
 class Account{
 public:
 	~Account();
@@ -15,39 +33,19 @@ public:
 	virtual void deposit(const Date& date, double amount, const std::string &desc) = 0;
 	virtual void withdraw(const Date& date, double amount, const std::string &desc) = 0; //取出现金
 	virtual void settle(const Date &date) = 0;
+	static void query(const Date& begin, const Date& end);
 
 private:
 	std::string id;
 	double balance;
 	static double total;
+	static RecordMap recordMap;	//账目记录
 
 protected: // 便于派生类访问调用
 	Account(const Date &date, const std::string &id);
 	void record(const Date &date, double amount, const std::string &desc);
 	void error(const std::string &msg)const;
 };
-
-class AccountRecord{ // 账目记录
-public:
-	AccountRecord();
-	~AccountRecord();
-
-private:
-	Date date;
-	const Account *account;
-	double amount;
-	double balance;
-	std::string desc;
-};
-
-
-AccountRecord::AccountRecord()
-{
-}
-
-AccountRecord::~AccountRecord()
-{
-}
 
 
 // 储蓄卡类

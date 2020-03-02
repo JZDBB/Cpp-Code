@@ -5,7 +5,7 @@ Accumulator::Accumulator(const Date &date, double value):lastDate(date), value(v
 Accumulator::~Accumulator(){}
 
 double Accumulator::getSum(const Date &date){
-	return sum + value * date.distance(lastDate);
+	return sum + value * (date-lastDate);
 }
 
 void Accumulator::change(const Date &date, double value){
