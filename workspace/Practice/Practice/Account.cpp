@@ -73,7 +73,7 @@ void Account::record(const Date &date, double amount, const std::string & desc)
 
 void Account::error(const std::string & msg) const
 {
-	cout << "Error(#" << id << "):" << msg << endl;
+	throw AccountException(this, msg);
 }
 
 

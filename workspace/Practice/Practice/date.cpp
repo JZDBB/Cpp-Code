@@ -12,12 +12,8 @@ Date::Date()
 {
 }
 Date::Date(int year, int month, int day) :year(year), month(month), day(day) {
-    if (day <= 0 || day > getMaxDay()) {
-        cout << "Invalid date: ";
-        show();
-        cout << endl;
-        exit(1);
-    }
+    if (day <= 0 || day > getMaxDay())
+		throw runtime_error("Invalid date");
     int years = year - 1;
     totalDays = year * 365 + years / 4 - years / 100 + years / 400 + DAYS_BEFORE_MONTH[month - 1] + day;
     if (isLeapYear() && month > 2) totalDays++;

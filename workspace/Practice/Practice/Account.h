@@ -5,6 +5,7 @@
 #include<map>
 #include <istream>
 #include<string>
+#include<stdexcept>
 
 class Account;
 
@@ -96,4 +97,13 @@ private:
 		double balance = getBalance();
 		return (balance < 0 ? balance : 0);
 	}
+};
+
+class AccountException : public std::runtime_error {
+private:
+	const Account *account;
+public:
+	AccountException(const Account *account, const std::string &msg)
+		: runtime_error(msg), account(account) { }
+	const Account *getAccount() const { return account; }
 };
