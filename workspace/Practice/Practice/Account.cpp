@@ -35,7 +35,7 @@ Account::~Account()
 {
 }
 
-void Account::show() const
+void Account::show(std::ostream &out) const
 {
 	cout << id << "\tBalance: " << balance;
 }
@@ -104,16 +104,18 @@ void SavingsAccount::withdraw(const Date& date, double amount, const string &des
 
 void SavingsAccount::settle(const Date& date)
 {
-	double interest = acc.getSum(date) * rate	//计算年息
-		/ (date - Date(date.getYear() - 1, 1, 1));
-	if (interest != 0)
-		record(date, interest, "interest");
-	acc.reset(date, getBalance());
+	if (date.getMonth() == 1) {	//每年的一月计算一次利息
+		double interest = acc.getSum(date) * rate
+			/ (date - Date(date.getYear() - 1, 1, 1));
+		if (interest != 0)
+			record(date, interest, " interest");
+		acc.reset(date, getBalance());
+	}
 }
 
-void SavingsAccount::show() const
+void SavingsAccount::show(std::ostream &out) const
 {
-	Account::show();
+	Account::show(out);
 }
 
 
@@ -155,15 +157,15 @@ void CreditAccount::settle(const Date &date)
 {
 	double interest = acc.getSum(date) * rate;
 	if (interest != 0)
-		record(date, interest, "interest");
+		record(date, interest, " interest");
 	if (date.getMonth() == 1)
-		record(date, -fee, "annual fee");
+		record(date, -fee, " annual fee");
 	acc.reset(date, getDebt());
 }
 
-void CreditAccount::show() const
+void CreditAccount::show(std::ostream &out) const
 {
-	Account::show();
+	Account::show(out);
 	cout << "\tAvailable Credit:" << getAvailableCredit();
 }
 

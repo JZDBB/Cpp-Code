@@ -1,6 +1,6 @@
 #ifndef date_hpp
 #define date_hpp
-
+#include<iostream>
 
 class Date {
 private:
@@ -28,7 +28,10 @@ public:
 	int operator - (const Date &date) const {
 		return totalDays - date.totalDays;
 	}
-};
 
+
+};
+std::istream & operator >> (std::istream &in, Date &date);
+std::ostream & operator << (std::ostream &out, const Date &date);
 
 #endif /* date_hpp */

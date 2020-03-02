@@ -3,6 +3,8 @@
 #include"Accumulator.h"
 #include"date.h"
 #include<map>
+#include <istream>
+#include<string>
 
 class Account;
 
@@ -28,7 +30,7 @@ public:
 	const std::string &getId() const { return id; }
 	double getBalance() const { return balance; }
 	static double getTotal() { return total; }
-	virtual void show() const;
+	virtual void show(std::ostream &out) const;
 	// 虚函数声明用以子类调用
 	virtual void deposit(const Date& date, double amount, const std::string &desc) = 0;
 	virtual void withdraw(const Date& date, double amount, const std::string &desc) = 0; //取出现金
@@ -47,6 +49,10 @@ protected: // 便于派生类访问调用
 	void error(const std::string &msg)const;
 };
 
+inline std::ostream & operator << (std::ostream &out, const Account &account) {
+	account.show(out);
+	return out;
+}
 
 // 储蓄卡类
 class SavingsAccount: public Account{
@@ -57,7 +63,7 @@ public:
 	virtual void withdraw(const Date& date, double amount, const std::string &desc); //取出现金
 	//结算利息，每年1月1日调用一次该函数
 	virtual void settle(const Date &date);
-	virtual void show() const;
+	virtual void show(std::ostream &out) const;
 
 private:
 	Accumulator acc;
@@ -78,7 +84,7 @@ public:
 	virtual void withdraw(const Date &date, double amount, const std::string &desc); //取出现金
 	//结算利息，每年1月1日调用一次该函数
 	virtual void settle(const Date &date);
-	virtual void show() const;
+	virtual void show(std::ostream &out) const;
 
 private:
 	Accumulator acc;

@@ -38,3 +38,17 @@ int Date::getMaxDay()const {
 void Date::show() const {
     cout << getYear() <<"-"<< getMonth() <<"-"<< getDay();
 }
+
+// 重载<<和>>方便输入输出，同时返回为引用，方便连续使用
+istream & operator >> (istream &in, Date &date) {
+	int year, month, day;
+	char c1, c2;
+	in >> year >> c1 >> month >> c2 >> day;
+	date = Date(year, month, day);
+	return in;
+}
+
+ostream & operator << (ostream &out, const Date &date) {
+	out << date.getYear() << "-" << date.getMonth() << "-" << date.getDay();
+	return out;
+}
