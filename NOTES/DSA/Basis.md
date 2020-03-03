@@ -104,7 +104,7 @@ $f(n)$ 更简洁，反应增长趋势
 
 ### 封底估算
 
-
+<img src="\img\封底估算.png" height=300px>
 
 ## 递归策略
 
@@ -127,8 +127,6 @@ void reverse(int* A, int lo, int hi){
 }
 ```
 
-
-
 ### 分而治之
 
 <img src="\img\分而治之-概念.png" height=300px>
@@ -137,7 +135,81 @@ void reverse(int* A, int lo, int hi){
 
 <img src="\img\分而治之-示例.png" height=300px>
 
+## 迭代策略
+
+递归算法一般都能够转化为迭代算法。
+
+找数组区间最大的两个整数：
+
+```C++
+// 方法一 迭代
+找到区间的最大值，记录index。从lo到index-1找最大数，从index+1到hi找最大数，对比两个数的大小得到次大数，开销为2n-3
+// 方法二 迭代
+通过x1，x2指针进行从lo到hi的扫描，先将所有数进行和A[x2]对比，大于A[x2]则更新x2的，再比较如果大于A[x1]，则x2和x1交换。开销为最小n-1，最大为2n-3
+// 方法三 递归+分治法
+取中间坐标，求前一半和后一半的各自最大最小数进行对比，得到。T(n)=2T(n/2)+2=5n/3-2
+```
+
 
 
 ## 动态规划
 
+### Fib()递归
+
+<img src="\img\FIB递归.png" height=300px>
+
+$\Phi^{36} \approx 2^{25}, \quad \Phi^{43} \approx 2^{30} \approx 10^9flo \approx 1 sec, \quad \Phi^5\approx 10, \quad \Phi^{92}\approx 10^{19}flo \approx 10^{10} sec\approx 3\  century$
+
+因为在递归中有大量重复的递归实例，比如在$fib(n-1)$ 和$fib(n-2)$中就包含了很多$fib(2)$ 的计算，事实上只需要一次计算。这就是递归效率低的原因。
+
+#### 解决方案
+
+- 记忆方法：将已经计算的结果进行**制表备查**
+
+  ```C++
+  __int64 fib(int n, __int64& prev) { //计算Fibonacci数列第n项（线性递归版）：入口形式fib(n, prev)
+  	if (0 == n){ //若到达递归基
+  		prev = 1; return 0;
+  	} //直接取值：fib(-1) = 1, fib(0) = 0
+  	else { //否则
+  		__int64 prevPrev; prev = fib(n - 1, prevPrev); //递归计算前两项
+  		return prevPrev + prev; //其和即为正解
+  	}
+  } //用辅助变量记录前一项，返回数列的当前项，O(n)
+  ```
+
+- **动态规划**：颠到计算方向：由自顶向下的递归，改为自底而上的迭代方法
+
+  ```C++
+  __int64 fibI(int n) {
+  	__int64 f = 1, g = 0; //初始化：fib(-1)、fib(0)
+  	while (0 < n--) { g += f; f = g - f; } //依据原始定义，通过n次加法和减法计算fib(n)
+  	return g; //返回
+  }
+  ```
+
+  
+
+### LCS 最长公共子序列
+
+<img src="\img\LCS.png" height=300px>
+
+#### 递归方法
+
+```C++
+// 对于序列A[0,n)和B[0,m)，LCS( n，m )三种情况
+(0)若n=-1或m=-1,则取作空序列("")  //递归基
+(1)若A[n]='X'=B[m]，则取作:LCS(n-1，m-1)+'X'  //减而治之
+(2) A[n]≠B[m]，则在 LCS(n,m-1)与LCS(n-1,m)的结果中取更长者  //分而治之
+```
+
+##### 复杂度
+
+- 如果不出现第二种分而治之的情况，最坏的时间为$o(n+m)$
+- 最糟糕的是每次都分而治之，最终的$C_n^{n+m}$的开销，当$n=m$时，为$o(2^n)$
+
+#### 迭代算法
+
+将所有子问题列为一个表，颠到次序从`LCS(A[0], B[0])` 出发依次得到所有项。计算复杂度$o(n\times m)$
+
+<img src="\img\LCS迭代.png" height=300px>

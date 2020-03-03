@@ -115,6 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Fib0.cpp" />
+    <ClCompile Include="Fib1.cpp" />
+    <ClCompile Include="Fib2.cpp" />
+    <ClCompile Include="LCS.cpp" />
+    <ClCompile Include="LCSI.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Fib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
