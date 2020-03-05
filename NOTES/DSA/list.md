@@ -11,24 +11,22 @@
 ## 基本概念
 
 - 从向量到列表：
-  - 
 - 从秩到位置：从头/尾端出发，沿着前继/后驱访问，从直接循秩访问改为循位置访问，利用节点间的相互引用
 
 ### 列表节点：ADT接口
 
-![image-20200304170506358](C:\Users\yn\Desktop\C++\NOTES\DSA\img\列表节点.png)
+<img src="\img\列表节点.png" width=600px>
 
 ### 列表模板
 
-![image-20200304170432957](C:\Users\yn\Desktop\C++\NOTES\DSA\img\列表模板.png)
+<img src="\img\列表模板.png" width=600px>
 
 #### 构造
 
-![image-20200304170837988](C:\Users\yn\Desktop\C++\NOTES\DSA\img\列表构造.png)
+<img src="\img\列表构造.png" width=600px>
 
 ### 析构
-
-![image-20200304172036240](C:\Users\yn\Desktop\C++\NOTES\DSA\img\列表析构.png)
+<img src="\img\列表析构.png" width=600px>
 
 ## 列表操作
 
@@ -42,21 +40,19 @@
 
 只与列表局部有关系，区分于向量需要挪动后面的数据。
 
-
-
 ### 唯一化
 
 #### 无序列表
 
-![image-20200304173021095](C:\Users\yn\Desktop\C++\NOTES\DSA\img\无序列表-去重.png)
+<img src="\img\无序列表-去重.png" width=600px>
 
 #### 有序列表
 
-![image-20200304173508201](C:\Users\yn\Desktop\C++\NOTES\DSA\img\有序列表-去重.png)
-
+<img src="\img\有序列表-去重.png" width=600px>
 
 
 ### 查找算法
 
-有序无序基本相同![image-20200304173835769](C:\Users\yn\Desktop\C++\NOTES\DSA\img\列表-查找.png)
+有序无序基本相同
 
+<img src="\img\列表-查找.png" width=600px>
