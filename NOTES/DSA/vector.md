@@ -2,7 +2,7 @@
 
 向量和列表都是线性序列。
 
-<img src="\img\ADT vs DS.png" width="600px">
+<img src=".\img\ADT vs DS.png" width="600px">
 
 ## 向量
 
@@ -26,20 +26,20 @@ T* oldElem = _elem; _elem = new T[_capacity<<=1];
 
 原因：
 
-<img src="\img\倍增策略对比.png" height="270px"> 通过空间的损失换取时间上的收益 
+<img src=".\img\倍增策略对比.png" height="270px"> 通过空间的损失换取时间上的收益 
 
 #### 平均分析 VS 分摊分析
 
 ### 元素访问
 
-<img src="\img\元素访问.png" width="600px">
+<img src=".\img\元素访问.png" width="600px">
 
 ### 元素插入
-<img src="\img\元素插入.png" width="600px">
+<img src=".\img\元素插入.png" width="600px">
 
 
 ### 区间删除
-<img src="\img\区间删除.png" width="600px">
+<img src=".\img\区间删除.png" width="600px">
 
 
 ### 单元素删除
@@ -49,13 +49,13 @@ T* oldElem = _elem; _elem = new T[_capacity<<=1];
 单元数删除反复调用来实现区间删除成本大于整体区间删除，因为多次重复的平移，可能导致$o(n)$ 的复杂度。
 
 ### 遍历
-<img src="\img\元素遍历.png" width="600px">
+<img src=".\img\元素遍历.png" width="600px">
 
 ### 唯一化算法
 
 #### 无序向量
 
-<img src="img\无序向量去重.png" width=600px>
+<img src=".\img\无序向量去重.png" width=600px>
 
 #### 有序向量
 
@@ -64,12 +64,12 @@ T* oldElem = _elem; _elem = new T[_capacity<<=1];
 - 有序向量的优点能够高效的进行唯一化计算
 
 - **低效的根源在于：同一个元素可作为被删除元素的后继进行多次前移**
-<img src="\img\向量唯一化.png" width="600px">
+<img src=".\img\向量唯一化.png" width="600px">
 
 ### 查找算法
 
 #### 无序向量
-<img src="\img\元素查找.png" width="600px">
+<img src=".\img\元素查找.png" width="600px">
 
 #### 有序向量
 
@@ -86,21 +86,21 @@ V.insert(1 + V.search(e), e)
 ##### 二分查找
 
 - **A 方案 减而治之**
-<img src="\img\二分查找-减而治之.png" width="600px">
+<img src=".\img\二分查找-减而治之.png" width="600px">
 
 **复杂度：**线性递归：$T(n)=T(n/2)+\mathcal{O}(1)=\mathcal{O}(logn)$ 
 
-<img src="\img\递归二分查找复杂度.png" width="600px">
+<img src=".\img\递归二分查找复杂度.png" width="600px">
 
 - **改进A方案**
 
   左右比较次数不等，递归深度却相同，可以通过递归深度不均衡来对转向成本不均衡进行补偿。
 
-  <img src="\img\Fid二分查找复杂度.png" width="600px">
+  <img src=".\img\Fid二分查找复杂度.png" width="600px">
 
 **通用策略**
 
-<img src="\img\通用策略.png" width="600px">
+<img src=".\img\通用策略.png" width="600px">
 
 证明：在$[0, 1)$ 内取$\lambda$何值为最优，设平均查找长度为$\alpha(\lambda)log_2n$
 
@@ -112,16 +112,11 @@ V.insert(1 + V.search(e), e)
 
 改进转向不平衡——只有两个方向，`e<x`和`e>=x` 两个方向
 
-<img src="\img\B方案二分查找.png" width="600px">
+<img src=".\img\B方案二分查找.png" width="600px">
 
 - **C方案二分查找**
 
 语义约定：多个命中返回秩最大者，失败返回小于e的最大者。
 
-<img src="\img\最终方案-二分查找.png" width="600px">
-
-
-
-
-#### 插值查找（扩）
+<img src=".\img\最终方案-二分查找.png" width="600px">
 

@@ -23,11 +23,11 @@
 
   - 提前终止版
 
-    <img src="\img\冒泡排序-code.png" width=600px>
+    <img src=".\img\冒泡排序-code.png" width=600px>
 
   - 跳跃版
 
-    <img src="\img\冒泡排序-code2.png" width=600px>
+    <img src=".\img\冒泡排序-code2.png" width=600px>
 
   - **综合评价：**
 
@@ -35,7 +35,7 @@
 
     - 稳定的：因为在重复数组输入输出的相对次序是保持不变的——有赖于 `if` 判断后的交换语句中为 `>` 而不是 `>=`
 
-      <img src="\img\排序算法-稳定性.png" width=400px>
+      <img src=".\img\排序算法-稳定性.png" width=400px>
 
 
 #### 归并排序
@@ -46,19 +46,21 @@
 
   - 子序列合并中消耗为两个子序列长度成线性关系。
 
-    <img src="\img\归并排序-子序列合并.png" width=600px>
+    <img src=".\img\归并排序-子序列合并.png" width=600px>
 
   - 优点：算法性能好，具有稳定性，可扩展性好，易于并行。
 
   - 缺点：需要对等规模的存储空间，在输入接近有序的时候开销依然是$o(nlogn)$
 
+##### 插值查找（扩）
+
 ### 列表排序
 
 #### 选择排序（效率较高的冒泡排序）
 
-<img src="\img\选择排序.png" width=600px>
+<img src=".\img\选择排序.png" width=600px>
 
-<img src="\img\列表找最大值.png" width=600px>
+<img src=".\img\列表找最大值.png" width=600px>
 
 ##### 性能分析：
 
@@ -69,7 +71,7 @@
 
 #### 插入排序
 
-<img src="\img\插入排序-code.png" width=600px>
+<img src=".\img\插入排序-code.png" width=600px>
 
 ##### **性能分析：**
 
@@ -87,3 +89,8 @@
 - 从逆序对的角度看，逆序对的数量都记在逆序对后一个元素。
 - 插入排序一般度量表示为$o(I+n),\quad I=\sum i(p), \quad i(p)为逆序对数量\quad n为插入开销$。
 - 可以解读为一次次修复列表的无序，所以复杂度取决于输入的无序程度，为**输入敏感的的排序**。
+
+
+
+
+

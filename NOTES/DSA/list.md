@@ -15,18 +15,18 @@
 
 ### 列表节点：ADT接口
 
-<img src="\img\列表节点.png" width=600px>
+<img src=".\img\列表节点.png" width=600px>
 
 ### 列表模板
 
-<img src="\img\列表模板.png" width=600px>
+<img src=".\img\列表模板.png" width=600px>
 
 #### 构造
 
-<img src="\img\列表构造.png" width=600px>
+<img src=".\img\列表构造.png" width=600px>
 
 ### 析构
-<img src="\img\列表析构.png" width=600px>
+<img src=".\img\列表析构.png" width=600px>
 
 ## 列表操作
 
@@ -44,15 +44,15 @@
 
 #### 无序列表
 
-<img src="\img\无序列表-去重.png" width=600px>
+<img src=".\img\无序列表-去重.png" width=600px>
 
 #### 有序列表
 
-<img src="\img\有序列表-去重.png" width=600px>
+<img src=".\img\有序列表-去重.png" width=600px>
 
 
 ### 查找算法
 
 有序无序基本相同
 
-<img src="\img\列表-查找.png" width=600px>
+<img src=".\img\列表-查找.png" width=600px>
