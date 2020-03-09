@@ -1,18 +1,17 @@
 #pragma once
-
+#include "vector_implementation.h"
 typedef int Rank; //秩
 #define DEFAULT_CAPACITY  3 //默认的初始容量（实际应用中可设置为更大）
 
-template <typename T> class Vector { //向量模板类
+template <typename T> 
+class Vector { //向量模板类
 protected:
    Rank _size; int _capacity;  T* _elem; //规模、容量、数据区
    void copyFrom ( T const* A, Rank lo, Rank hi ); //复制数组区间A[lo, hi)
    void expand(); //空间不足时扩容
    void shrink(); //装填因子过小时压缩
    bool bubble ( Rank lo, Rank hi ); //扫描交换
-   void bubbleSort1 ( Rank lo, Rank hi ); //起泡排序算法
-   void bubbleSort2(Rank lo, Rank hi); //起泡排序算法
-   void bubbleSort3(Rank lo, Rank hi); //起泡排序算法
+   void bubbleSort ( Rank lo, Rank hi ); //起泡排序算法
    Rank max ( Rank lo, Rank hi ); //选取最大元素
    void selectionSort ( Rank lo, Rank hi ); //选择排序算法
    void merge ( Rank lo, Rank mi, Rank hi ); //归并算法
@@ -42,7 +41,7 @@ public:
 // 可写访问接口
    T& operator[] ( Rank r ); //重载下标操作符，可以类似于数组形式引用各元素
    const T& operator[] ( Rank r ) const; //仅限于做右值的重载版本
-   Vector<T> & operator= ( Vector<T> const& ); //重载赋值操作符，以便直接克隆向量
+   Vector<T> & operator= ( Vector<T> const& V); //重载赋值操作符，以便直接克隆向量
    T remove ( Rank r ); //删除秩为r的元素
    int remove ( Rank lo, Rank hi ); //删除秩在区间[lo, hi)之内的元素
    Rank insert ( Rank r, T const& e ); //插入元素
@@ -58,4 +57,5 @@ public:
    template <typename VST> void traverse ( VST& ); //遍历（使用函数对象，可全局性修改）
 }; //Vector
 
-#include "vector_implementation.h"
+
+
