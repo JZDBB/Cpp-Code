@@ -115,6 +115,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basis_op.h" />
+    <ClInclude Include="list.h" />
+    <ClInclude Include="listNode.h" />
+    <ClInclude Include="List_implementation.h" />
+    <ClInclude Include="search.h" />
+    <ClInclude Include="sort.h" />
+    <ClInclude Include="traverse.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
