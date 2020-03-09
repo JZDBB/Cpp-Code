@@ -1,5 +1,5 @@
 #pragma once
-#include "vector_implementation.h"
+
 typedef int Rank; //秩
 #define DEFAULT_CAPACITY  3 //默认的初始容量（实际应用中可设置为更大）
 
@@ -17,7 +17,7 @@ protected:
    void merge ( Rank lo, Rank mi, Rank hi ); //归并算法
    void mergeSort ( Rank lo, Rank hi ); //归并排序算法
    void heapSort ( Rank lo, Rank hi ); //堆排序（稍后结合完全堆讲解）
-   Rank partition ( Rank lo, Rank hi ); //轴点构造算法
+   //Rank partition ( Rank lo, Rank hi ); //轴点构造算法
    void quickSort ( Rank lo, Rank hi ); //快速排序算法
    void shellSort ( Rank lo, Rank hi ); //希尔排序算法
 public:
@@ -33,6 +33,7 @@ public:
 // 只读访问接口
    Rank size() const { return _size; } //规模
    bool empty() const { return !_size; } //判空
+   T begin() const { return _elem[0]; };
    Rank find ( T const& e ) const { return find ( e, 0, _size ); } //无序向量整体查找
    Rank find ( T const& e, Rank lo, Rank hi ) const; //无序向量区间查找
    Rank search ( T const& e ) const //有序向量整体查找
@@ -53,9 +54,9 @@ public:
    int deduplicate(); //无序去重
    int uniquify(); //有序去重
 // 遍历
-   void traverse ( void (* ) ( T& ) ); //遍历（使用函数指针，只读或局部性修改）
-   template <typename VST> void traverse ( VST& ); //遍历（使用函数对象，可全局性修改）
+   void traverse(void(*visit) (T&)); //遍历（使用函数指针，只读或局部性修改）
+   template <typename VST> void traverse(VST& visit);//遍历（使用函数对象，可全局性修改）
 }; //Vector
 
 
-
+#include "vector_implementation.h"

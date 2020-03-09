@@ -121,6 +121,16 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Binsearch.h" />
+    <ClInclude Include="copy_constructor.h" />
+    <ClInclude Include="Fib.h" />
+    <ClInclude Include="Fibsearch.h" />
+    <ClInclude Include="item_op.h" />
+    <ClInclude Include="overload.h" />
+    <ClInclude Include="search.h" />
+    <ClInclude Include="size_change.h" />
+    <ClInclude Include="Sort.h" />
+    <ClInclude Include="traverse.h" />
     <ClInclude Include="vector.h" />
     <ClInclude Include="vector_implementation.h" />
   </ItemGroup>

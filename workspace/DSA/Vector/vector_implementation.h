@@ -6,3 +6,5 @@
 #include "item_op.h"
 #include "traverse.h"
 #include"search.h"
+#include"Binsearch.h"
+#include"Fibsearch.h"

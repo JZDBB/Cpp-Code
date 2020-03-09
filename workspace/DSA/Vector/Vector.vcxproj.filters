@@ -26,5 +26,35 @@
     <ClInclude Include="vector_implementation.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="copy_constructor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="size_change.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="search.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="overload.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="item_op.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="traverse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Fib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Binsearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Fibsearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

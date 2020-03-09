@@ -1,3 +1,4 @@
+#include "vector.h"
 #pragma once
 template <typename T>
 T Vector<T>::remove(Rank r){
@@ -19,9 +20,8 @@ int Vector<T>::remove(Rank lo, Rank hi) {
 template <typename T>
 Rank Vector<T>::insert(Rank r, T const& e) {
 	expand();
-	_size++;
-	while (_size > r) _elem[_size--] = _elem[(_size--) - 1];
-	_elem[r] = e;
+	for (int i = _size; i > r; i--) _elem[i] = _elem[i - 1]; //自后向前，后继元素顺次后移一个单元
+	_elem[r] = e; _size++; //置入新元素并更新容量
 	return r;
 }
 
@@ -45,4 +45,13 @@ int Vector<T>::uniquify() {
 			_elem[++i] = _elem[j];
 	_size = ++i; shrink();
 	return j - i;
+}
+
+template<typename T>
+Rank Vector<T>::max(Rank lo, Rank hi) {
+	Rank mx = hi;
+	while (lo < hi--)
+		if (_elem[hi] > _elem[mx])
+			mx = hi;
+	return mx;
 }
