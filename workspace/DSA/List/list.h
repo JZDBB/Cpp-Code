@@ -20,11 +20,11 @@ private:
 protected:
 	void init(); //列表创建时的初始化
 	int clear(); //清除所有节点
-	void copyNodes(ListNodePosi(T), int); //复制列表中自位置p起的n项
-	void merge(ListNodePosi(T)&, int, List<T>&, ListNodePosi(T), int); //归并
-	void mergeSort(ListNodePosi(T)&, int); //对从p开始连续的n个节点归并排序
-	void selectionSort(ListNodePosi(T), int); //对从p开始连续的n个节点选择排序
-	void insertionSort(ListNodePosi(T), int); //对从p开始连续的n个节点插入排序
+	void copyNodes(ListNodePosi(T) p, int n); //复制列表中自位置p起的n项
+	void merge(ListNodePosi(T)& p, int n, List<T>& L, ListNodePosi(T) q, int m); //归并
+	void mergeSort(ListNodePosi(T)& p, int n); //对从p开始连续的n个节点归并排序
+	void selectionSort(ListNodePosi(T) p, int n); //对从p开始连续的n个节点选择排序
+	void insertionSort(ListNodePosi(T) p, int n); //对从p开始连续的n个节点插入排序
 
 public:
 	// 构造函数
@@ -69,9 +69,9 @@ public:
 	int uniquify(); //有序去重
 	void reverse(); //前后倒置（习题）
  // 遍历
-	void traverse(void(*) (T&)); //遍历，依次实施visit操作（函数指针，只读或局部性修改）
+	void traverse(void(*visit) (T&)); //遍历，依次实施visit操作（函数指针，只读或局部性修改）
 	template <typename VST> //操作器
-	void traverse(VST&); //遍历，依次实施visit操作（函数对象，可全局性修改）
+	void traverse(VST & visit); //遍历，依次实施visit操作（函数对象，可全局性修改）
 }; //List
 
 #include "List_implementation.h"
