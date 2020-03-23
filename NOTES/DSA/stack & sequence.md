@@ -22,9 +22,7 @@
 
 线性扫描中，在预读足够长之后才能确定可处理的前缀。
 
-
-
-![image-20200305143150306](C:\Users\yn\Desktop\C++\NOTES\DSA\img\栈-计算优先级.png)
+<img src=".\img\栈-计算优先级.png" width=600px>
 
 
 
@@ -44,4 +42,4 @@
 
 只能在队尾插入，在对头删除，用列表可以很好的实现。
 
-![image-20200305170538216](C:\Users\yn\Desktop\C++\NOTES\DSA\img\队列-链表实现.png)
+<img src=".\img\队列-链表实现.png" width=600px>
