@@ -1,6 +1,7 @@
 #include<vector>
 #include<algorithm>
 #include<unordered_map>
+#include<string>
 using namespace std;
 
 // TwoSum
@@ -51,11 +52,20 @@ int subarraySum(vector<int>& nums, int k) {
 }
 
 
+// 不重复最长子序列
+int lengthOfLongestSubstring(string s) {
+
+}
+
+
 int main() {
 	
-	int a[9] = { 1, 1, 1, -1, 0, 1, 2, 1};
+	/*int a[9] = { 1, 1, 1, -1, 0, 1, 2, 1};
 	vector<int> nums(a, a + 8);
-	int i = subarraySum(nums, 2);
+	int i = subarraySum(nums, 2);*/
+
+	string s = "aabbccccaab";
+	int a = lengthOfLongestSubstring(s);
 
 	return 0;
 }
