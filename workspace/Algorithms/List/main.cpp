@@ -7,6 +7,7 @@ struct ListNode {
 	ListNode(int x) : val(x), next(NULL) {}
 };
 
+// 2. 两数相加
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
 	int mi = 0;
 
@@ -44,6 +45,14 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
 	if (mi) p->next = new ListNode(1);
 
 	return res;
+}
+
+
+// 链表判断是否有环 ——无环则返回false，有环则陷入死循环【需要优化】
+bool hasCycle(ListNode* head) {
+	while (head != NULL)
+		head = head->next;
+	return false;
 }
 
 
