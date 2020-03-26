@@ -115,7 +115,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="160.cpp" />
+    <ClCompile Include="19.cpp" />
+    <ClCompile Include="2.cpp" />
+    <ClCompile Include="206.cpp" />
+    <ClCompile Include="21.cpp" />
+    <ClCompile Include="24.cpp" />
+    <ClCompile Include="hasCycle.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="List_func.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

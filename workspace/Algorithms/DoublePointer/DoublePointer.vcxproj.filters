@@ -18,5 +18,43 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="663.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="167.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="345.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="680.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="88.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="524.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="283.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="27.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="26.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="141.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="876.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="doublePointer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

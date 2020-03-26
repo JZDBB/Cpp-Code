@@ -115,7 +115,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="141.cpp" />
+    <ClCompile Include="167.cpp" />
+    <ClCompile Include="26.cpp" />
+    <ClCompile Include="27.cpp" />
+    <ClCompile Include="283.cpp" />
+    <ClCompile Include="345.cpp" />
+    <ClCompile Include="524.cpp" />
+    <ClCompile Include="663.cpp" />
+    <ClCompile Include="680.cpp" />
+    <ClCompile Include="876.cpp" />
+    <ClCompile Include="88.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="doublePointer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
