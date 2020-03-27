@@ -39,6 +39,15 @@
     <ClCompile Include="24.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="234.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="445.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="328.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="List_func.h">

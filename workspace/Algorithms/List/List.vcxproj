@@ -120,7 +120,10 @@
     <ClCompile Include="2.cpp" />
     <ClCompile Include="206.cpp" />
     <ClCompile Include="21.cpp" />
+    <ClCompile Include="234.cpp" />
     <ClCompile Include="24.cpp" />
+    <ClCompile Include="328.cpp" />
+    <ClCompile Include="445.cpp" />
     <ClCompile Include="hasCycle.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
