@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{7F4C72D9-5EEF-4815-8402-72AD29F4088B}</ProjectGuid>
-    <RootNamespace>List</RootNamespace>
+    <ProjectGuid>{EE1065FB-0220-4E27-9C73-F91F584C1056}</ProjectGuid>
+    <RootNamespace>StackQueues</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,22 +115,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="160.cpp" />
-    <ClCompile Include="19.cpp" />
-    <ClCompile Include="2.cpp" />
-    <ClCompile Include="206.cpp" />
-    <ClCompile Include="21.cpp" />
-    <ClCompile Include="234.cpp" />
-    <ClCompile Include="24.cpp" />
-    <ClCompile Include="328.cpp" />
-    <ClCompile Include="445.cpp" />
-    <ClCompile Include="725.cpp" />
-    <ClCompile Include="82.cpp" />
-    <ClCompile Include="hasCycle.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="MinStack.h" />
+    <ClInclude Include="MyQueue.h" />
+    <ClInclude Include="MyStack.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="List_func.h" />
+    <ClCompile Include="20.cpp" />
+    <ClCompile Include="503.cpp" />
+    <ClCompile Include="739.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyQueue.cpp" />
+    <ClCompile Include="MyStack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

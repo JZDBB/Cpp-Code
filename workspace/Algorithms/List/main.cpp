@@ -18,11 +18,17 @@ int main() {
 	p = p->next;
 	p->next = new ListNode(3);
 	p = p->next;
+	p->next = new ListNode(3);
+	p = p->next;
+	p->next = new ListNode(4);
+	p = p->next;
 	p->next = new ListNode(4);
 	p = p->next;
 	p->next = new ListNode(5);
 
-	ListNode* m = oddEvenList(l1);
+	ListNode* head = deleteDuplicates(l1);
+
+	//ListNode* m = oddEvenList(l1);
 
 	//ListNode* l2 = new ListNode(5);
 	//p = l2;
