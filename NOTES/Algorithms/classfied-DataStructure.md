@@ -8,3 +8,31 @@
 
 典型例题：[234. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)
 
+
+
+## 数组
+
+
+
+## 栈和队列
+
+- 双栈实现队列&& 双队列实现栈
+- **单调栈**：应用不广泛，主要用来实现Next Greater Element这一种典型问题。
+- **单调队列**：[239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
+
+
+
+## 树
+
+
+
+## 哈希表
+
+
+
+## 字符串
+
+
+
+
+
