@@ -2,10 +2,9 @@
 
 int main() {
 
-	string s = "  the  sky is   blue ";
-	string a = reverseWords(s);
-
-
+	/*string s = "  Let's    take LeetCode  contest  ";
+	string a = reverseWords2(s);*/
+	int a = countBinarySubstrings("00110011");
 
 	return 0;
 }

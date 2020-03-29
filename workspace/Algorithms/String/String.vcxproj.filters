@@ -24,6 +24,24 @@
     <ClCompile Include="9.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="242.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="205.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="557.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="409.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="647.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="696.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="string_func.h">
