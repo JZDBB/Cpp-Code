@@ -18,33 +18,18 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="645.cpp">
+    <ClCompile Include="104.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="sum.cpp">
+    <ClCompile Include="110.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="766.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="566.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="697.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="287.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="240.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="912.cpp">
+    <ClCompile Include="543.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="vector_func.h">
+    <ClInclude Include="tree_func.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

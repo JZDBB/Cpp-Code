@@ -42,6 +42,9 @@
     <ClCompile Include="696.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1316.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="string_func.h">

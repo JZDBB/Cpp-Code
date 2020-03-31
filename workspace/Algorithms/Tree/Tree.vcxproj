@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{71E3A513-9C08-4C0D-8D21-6567DAB047A9}</ProjectGuid>
-    <RootNamespace>Vector</RootNamespace>
+    <ProjectGuid>{7AE52622-7ED9-4029-BDA4-1A13CA039674}</ProjectGuid>
+    <RootNamespace>Tree</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,18 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="vector_func.h" />
+    <ClCompile Include="104.cpp" />
+    <ClCompile Include="110.cpp" />
+    <ClCompile Include="543.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="240.cpp" />
-    <ClCompile Include="287.cpp" />
-    <ClCompile Include="566.cpp" />
-    <ClCompile Include="645.cpp" />
-    <ClCompile Include="697.cpp" />
-    <ClCompile Include="766.cpp" />
-    <ClCompile Include="912.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="sum.cpp" />
+    <ClInclude Include="tree_func.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
