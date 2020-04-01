@@ -44,7 +44,7 @@
 
 ### 套路
 
-- 递归调用：[110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)、[563. 二叉树的坡度](https://leetcode-cn.com/problems/binary-tree-tilt/)、[543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)、
+- 递归调用：[110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)、[563. 二叉树的坡度](https://leetcode-cn.com/problems/binary-tree-tilt/)、[543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)、[129. 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)、
 
 
 
