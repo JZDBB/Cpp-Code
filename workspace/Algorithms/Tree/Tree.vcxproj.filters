@@ -42,6 +42,24 @@
     <ClCompile Include="572.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="101.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="226.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="671.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="617.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="687.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="437.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree_func.h">

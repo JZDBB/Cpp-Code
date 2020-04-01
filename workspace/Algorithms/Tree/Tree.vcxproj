@@ -115,14 +115,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="101.cpp" />
     <ClCompile Include="104.cpp" />
     <ClCompile Include="110.cpp" />
     <ClCompile Include="111.cpp" />
     <ClCompile Include="112.cpp" />
     <ClCompile Include="129.cpp" />
+    <ClCompile Include="226.cpp" />
     <ClCompile Include="404.cpp" />
+    <ClCompile Include="437.cpp" />
     <ClCompile Include="543.cpp" />
     <ClCompile Include="572.cpp" />
+    <ClCompile Include="617.cpp" />
+    <ClCompile Include="671.cpp" />
+    <ClCompile Include="687.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
