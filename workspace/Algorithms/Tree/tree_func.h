@@ -15,3 +15,5 @@ struct TreeNode {
 
 
 int diameterOfBinaryTree(TreeNode* root);
+
+bool isSubtree(TreeNode* s, TreeNode* t);
