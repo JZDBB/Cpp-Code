@@ -17,19 +17,18 @@ int main() {
 	p->left->right = new TreeNode(2);
 
 	TreeNode* a = mergeTrees(root1, root2);*/
-
 	TreeNode* root1 = new TreeNode(10);
 	TreeNode* p = root1;
-	p->left = new TreeNode(5);
-	p->right = new TreeNode(-3);
-	p->left->left = new TreeNode(3);
-	p->left->right = new TreeNode(2);
+	// p->left = new TreeNode(5);
+	p->right = new TreeNode(2);
+	p->right->left = new TreeNode(3);
+	/*p->left->right = new TreeNode(2);
 	p->right->right = new TreeNode(11);
 	p->left->left->left = new TreeNode(3);
 	p->left->left->right = new TreeNode(2);
-	p->left->right->right = new TreeNode(1);
+	p->left->right->right = new TreeNode(1);*/
 
-	int path = pathSum(root1, 8);
+	vector<int> a = postorderTraversal(root1);
 
 
 	return 0;

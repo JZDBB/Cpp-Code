@@ -4,7 +4,7 @@
 int countBinarySubstrings(string s) {
 
 	// O(n^2)
-	int left = 0, right = 0;
+	/*int left = 0, right = 0;
 	int flag = s[0];
 	int index = 0;
 	int res = 0;
@@ -18,7 +18,7 @@ int countBinarySubstrings(string s) {
 			flag = s[index];
 		}
 	}
-	return res;
+	return res;*/
 
 	// O(n)
 	int left = 0, right = 0;

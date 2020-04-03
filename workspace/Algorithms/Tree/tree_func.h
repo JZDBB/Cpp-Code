@@ -22,3 +22,5 @@ bool isSubtree(TreeNode* s, TreeNode* t);
 TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2);
 
 int pathSum(TreeNode* root, int sum);
+
+vector<int> postorderTraversal(TreeNode* root);

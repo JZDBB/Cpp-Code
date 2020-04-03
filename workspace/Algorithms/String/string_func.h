@@ -22,3 +22,5 @@ int longestPalindrome(string s);
 int countSubstrings(string s);
 
 int countBinarySubstrings(string s);
+
+int myAtoi(string str);
