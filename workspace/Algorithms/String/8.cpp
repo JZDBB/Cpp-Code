@@ -14,7 +14,7 @@ int myAtoi(string str) {
 			continue;
 		}
 		if (str[i] >='0' && str[i] <= '9') {
-			if ((res > max_int / 10) || ((res == (max_int / 10)) && ((sign && str[i] > '7') || (!sign && str[i] > '8')))) {
+			if ((res > max_int / 10) || (res == max_int / 10 && ((sign && str[i] > '7') || (!sign && str[i] > '8')))) {
 				if (sign == 1) res = max_int;
 				else res = max_int + 1;
 				break;
