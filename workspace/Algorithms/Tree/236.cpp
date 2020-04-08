@@ -33,11 +33,11 @@ bool getPath(TreeNode* root, TreeNode* p, vector<char>& v)
 	}
 }
 
-TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+TreeNode* lowestCommonAncestor2(TreeNode* root, TreeNode* p, TreeNode* q) {
 	// µÝ¹é·½·¨
 	if (!root || root == p || root == q) return root;
-	TreeNode* left = lowestCommonAncestor(root->left, p, q);
-	TreeNode* right = lowestCommonAncestor(root->right, p, q);
+	TreeNode* left = lowestCommonAncestor2(root->left, p, q);
+	TreeNode* right = lowestCommonAncestor2(root->right, p, q);
 	if (left && right) return root;
 	return left ? left : right;
 

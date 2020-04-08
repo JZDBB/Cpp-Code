@@ -87,6 +87,18 @@
     <ClCompile Include="230.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="538.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="235.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="236.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="108.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree_func.h">
