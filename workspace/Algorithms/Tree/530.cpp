@@ -4,7 +4,7 @@
 int getMinimumDifference(TreeNode* root) {
 	TreeNode* p = root;
 	stack<TreeNode*> s;
-	int temp;
+	int temp = INT_MAX;
 	int min = INT_MAX;
 	while (p || !s.empty()) {
 		while (p) {

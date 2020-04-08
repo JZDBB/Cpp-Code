@@ -15,6 +15,13 @@ struct TreeNode {
 };
 
 
+struct ListNode {
+	int val;
+	ListNode *next;
+	ListNode(int x) : val(x), next(NULL) {}
+};
+
+
 int diameterOfBinaryTree(TreeNode* root);
 
 bool isSubtree(TreeNode* s, TreeNode* t);
@@ -26,3 +33,5 @@ int pathSum(TreeNode* root, int sum);
 vector<int> postorderTraversal(TreeNode* root);
 
 TreeNode* sortedArrayToBST(vector<int>& nums);
+
+TreeNode* sortedListToBST(ListNode* head);

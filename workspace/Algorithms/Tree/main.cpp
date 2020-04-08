@@ -30,9 +30,21 @@ int main() {
 
 	//vector<int> a = postorderTraversal(root1);
 
-	int a[] = { -10, -3, 0, 5, 9 };
+	/*int a[] = { -10, -3, 0, 5, 9 };
 	vector<int> m(a, a + 5);
-	TreeNode* p = sortedArrayToBST(m);
+	TreeNode* p = sortedArrayToBST(m);*/
+
+	ListNode* l1 = new ListNode(-10);
+	ListNode* p = l1;
+	p->next = new ListNode(-3);
+	p = p->next;
+	p->next = new ListNode(0);
+	p = p->next;
+	p->next = new ListNode(5);
+	p = p->next;
+	p->next = new ListNode(9);
+	
+	TreeNode* a = sortedListToBST(l1);
 
 
 	return 0;
