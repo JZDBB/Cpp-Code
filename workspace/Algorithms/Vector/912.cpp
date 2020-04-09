@@ -1,11 +1,6 @@
 #include"vector_func.h"
 
 // 912. ≈≈–Ú ˝◊È
-vector<int> sortArray(vector<int>& nums) {
-	int n = nums.size();
-	SelectSort(nums, n);
-	return nums;
-}
 
 //—°‘Ò≈≈–Ú
 void SelectSort(vector<int>& nums, int n) {
@@ -20,51 +15,40 @@ void SelectSort(vector<int>& nums, int n) {
 
 // ≤Â»Î≈≈–Ú
 void InsertSort(vector<int>& nums, int n) {
+	for (int i = 1; i < n; i++) {
+		bool flag = false;
+		for (int j = 0; j < i; j++) {
+			if (nums[i] < nums[j]) flag = true;
+			if (flag) swap(nums[i], nums[j]);
+		}
+	}
+}
 
+// √∞≈›≈≈–Ú
+void BubbleSort(vector<int>& nums, int n) {
+	for (int i = 0; i < n - 1; i--) {
+		bool flag = false;
+		for (int j = n - 1; j > i; j--) {
+			if (nums[j] < nums[j - 1]) {
+				swap(nums[j], nums[j - 1]);
+				flag = true;
+			}
+		}
+		if (flag) return;
+	}
+}
+
+
+
+vector<int> sortArray(vector<int>& nums) {
+	int n = nums.size();
+	InsertSort(nums, n);
+	return nums;
 }
 
 
 
 
-
-
-
-
-
-
-////≤Â»Î
-//void InsertSort(vector<int>& nums, int n) {
-//	for (int i = 0; i < n; i++) {
-//		int temp = nums[i];
-//		int j = i - 1;
-//		while (j >= 0 && nums[j] > temp) {
-//			nums[j + 1] = nums[j];
-//			j--;
-//		}
-//		nums[j + 1] = temp;
-//	}
-//}
-////’€∞Î≤Â»Î
-//void HInsertSort(vector<int>& nums, int n) {
-//	int i, j, low, high, mid;
-//	for (i = 0; i < n; i++) {
-//		int tmp = nums[i];
-//		low = 0; high = i - 1;
-//		while (low <= high) {
-//			mid = low + (high - low) / 2;
-//			if (nums[mid] > tmp) {
-//				high = mid - 1;
-//			}
-//			else {
-//				low = mid + 1;
-//			}
-//		}
-//		for (j = i - 1; j >= high + 1; j--) {
-//			nums[j + 1] = nums[j];
-//		}
-//		nums[high + 1] = tmp;
-//	}
-//}
 ////œ£∂˚
 //void ShellSort(vector<int>& nums, int n) {
 //	for (int dk = n / 2; dk >= 1; dk = dk / 2) {
@@ -76,21 +60,6 @@ void InsertSort(vector<int>& nums, int n) {
 //				}
 //				nums[j + dk] = tmp;
 //			}
-//		}
-//	}
-//}
-////√∞≈›
-//void BubbleSort(vector<int>& nums, int n) {
-//	for (int i = 0; i < n - 1; i++) {
-//		bool flag = false;
-//		for (int j = n - 1; j > i; j--) {
-//			if (nums[j - 1] > nums[j]) {
-//				swap(nums[j - 1], nums[j]);
-//				flag = true;
-//			}
-//		}
-//		if (flag == false) {
-//			return;
 //		}
 //	}
 //}

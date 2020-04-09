@@ -18,12 +18,18 @@
     <ClInclude Include="solution.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="677.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="42.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="22.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
