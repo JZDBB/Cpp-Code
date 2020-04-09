@@ -45,4 +45,78 @@ while(front < tail) { ... }
 
   左右夹逼——复杂度： 时间复杂度O(n), 空间复杂度O(1).
 
-  
+
+
+
+
+
+## 排序
+
+- **比较类排序**：通过比较来决定元素间的相对次序，由于其时间复杂度不能突破O(nlogn)，因此也称为非线性时间比较类排序。
+- **非比较类排序**：不通过比较来决定元素间的相对次序，它可以突破基于比较排序的时间下界，以线性时间运行，因此也称为线性时间非比较类排序。 
+
+<img src="./img/Sort分类.png" height="450px">
+
+#### 复杂度和性质
+
+<img src="./img/Sort 复杂度.png" height="450px">
+
+
+
+### Code
+
+#### Bubble Sort
+
+<img src="./img/Bubble Sort.gif" width="500px">
+
+```C++
+void BubbleSort(vector<int>& nums, int n) {
+	for (int i = 0; i < n - 1; i--) {
+		bool flag = false;
+		for (int j = n - 1; j > i; j--) {
+			if (nums[j] < nums[j - 1]) {
+				swap(nums[j], nums[j - 1]);
+				flag = true;
+			}
+		}
+		if (flag) return; // 提前结束
+	}
+}
+```
+
+
+
+#### Selection Sort
+
+<img src="./img/Selection Sort.gif" width="500px">
+
+```C++
+void SelectSort(vector<int>& nums, int n) {
+	for (int i = 0; i < n - 1; i++) {
+		int min = i;
+		for (int j = i + 1; j < n; j++) {
+			if (nums[j] < nums[min]) min = j;
+		}
+		if (min != i) swap(nums[min], nums[i]);
+	}
+}
+```
+
+
+
+#### Insertion Sort
+
+<img src="./img/Insertion Sort.gif" width="500px">
+
+```C++
+void InsertSort(vector<int>& nums, int n) {
+	for (int i = 1; i < n; i++) {
+		bool flag = false;
+		for (int j = 0; j < i; j++) {
+			if (nums[i] < nums[j]) flag = true;
+			if (flag) swap(nums[i], nums[j]);
+		}
+	}
+}
+```
+
