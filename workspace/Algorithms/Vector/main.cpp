@@ -3,8 +3,8 @@
 
 
 int main() {
-	int a1[] = { 5,2,3,1 };
-	vector<int> a(a1, a1 + 4);
+	int a1[] = { 8,9,1,7,2,3,5,4,6,0 };
+	vector<int> a(a1, a1 + 10);
 	vector<int> b = sortArray(a);
 
 	/*int a[][5] = { {1, 4, 7, 11, 15},
