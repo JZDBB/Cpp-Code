@@ -33,19 +33,16 @@ string reverseWords(string s) {
 	if (start > end) return "";
 
 	//对单词进行反转(两个指针-快慢指针，确定需要反转的单词)
-	for (int right = start, left = start; right <= end;)
-	{
+	for (int right = start, left = start; right <= end;){
 		while (s[right] != ' ' && right <= end) right++;
 		reverse(s.begin() + left, s.begin() + right);
+		while (s[right] == ' ' && right <= end) right++;
 		left = right;
-		while (s[left] == ' ' && left <= end) left++;
-		right = left;
 	}
 
 	//去掉单词间的多余空格
 	int new_index = start;
-	for (int i = start; i <= end; i++)
-	{
+	for (int i = start; i <= end; i++){
 		if (s[i] == ' ' && s[i - 1] == ' ') continue;
 		s[new_index] = s[i];
 		new_index++;

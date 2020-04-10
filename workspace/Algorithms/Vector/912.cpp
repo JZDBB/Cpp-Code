@@ -140,10 +140,18 @@ void RadixSort(vector<int>& nums) {
 		max /= 10;
 		bit++;
 	}
-	vector<vector<int>> vessel(10, vector<int>(0, 0));
-	for (int i = 0; i < bit; i++) {
+	for (int i = 1; i <= bit; i++) {
+		vector<vector<int>> vessel(10, vector<int>(0, 0));
 		for (int j = 0; j < nums.size(); j++) {
-
+			int diff = nums[j] / pow(10, i - 1);
+			diff = diff % 10;
+			vessel[diff].push_back(nums[j]);
+		}
+		int index = 0;
+		for (int k = 0; k < vessel.size(); k++) {
+			for (auto item : vessel[k]) {
+				nums[index++] = item;
+			}
 		}
 	}
 }
@@ -151,7 +159,7 @@ void RadixSort(vector<int>& nums) {
 
 vector<int> sortArray(vector<int>& nums) {
 	int n = nums.size();
-	CountSort(nums);
+	RadixSort(nums);
 	return nums;
 }
 
