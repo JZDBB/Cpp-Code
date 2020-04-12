@@ -203,8 +203,27 @@ void QuickSort(vector<int>& nums, int low, int high) {
 
 <img src="./img/Heap Sort.gif" width="500px">
 
-```C++
+大顶堆&小顶堆——二叉堆（优先队列）
 
+```C++
+void build_heap(vector<int> &nums, int size, int index){
+    int left = 2*index+1;
+    int right = 2*index+2;
+    int max = index;
+    if(left<size && nums[left]>nums[max]) max = left;
+    if(right<size && nums[right]>nums[max]) max = right;
+    if(max!=index){
+        swap(nums[max], nums[index]);
+        build_heap(nums, size, max);
+    }
+}
+void HeapSort(vector<int> &nums, int size){
+    for(int i = size/2-1;i>=0;i--) build_heap(nums, size, i);
+    for(int i = size-1;i>0;i--){
+        swap(nums[i], nums[0]);
+        build_heap(nums, i, 0);
+    }
+}
 ```
 
 
@@ -233,12 +252,13 @@ void QuickSort(vector<int>& nums, int low, int high) {
 
 
 
-**1. 基数排序 vs 计数排序 vs 桶排序**
-
-基数排序有两种方法：
-
-这三种排序算法都利用了桶的概念，但对桶的使用方法上有明显差异：
+**基数排序 vs 计数排序 vs 桶排序**
 
 - 基数排序：根据键值的每位数字来分配桶；
 - 计数排序：每个桶只存储单一键值；
-  - 桶排序：每个桶存储一定范围的数值；
+- 桶排序：每个桶存储一定范围的数值；
+
+
+
+
+

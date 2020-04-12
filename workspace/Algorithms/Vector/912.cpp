@@ -101,7 +101,28 @@ void QuickSort(vector<int>& nums, int low, int high) {
 }
 
 // 堆排序
+void build_heap(vector<int> &nums, int size, int index) {
+	int left = 2 * index + 1;
+	int right = 2 * index + 2;
 
+	int max = index;
+	if (left < size && nums[left]>nums[max]) max = left;
+	if (right < size && nums[right]>nums[max]) max = right;
+
+	if (max != index) {
+		swap(nums[index], nums[max]);
+		build_heap(nums, size, max);
+	}
+}
+void HeapSort(vector<int> &nums, int size) {
+	for (int i = size / 2 - 1; i >= 0; i--) {
+		build_heap(nums, size, i);
+	}
+	for (int i = size - 1; i > 0; i--) {
+		swap(nums[0], nums[i]);
+		build_heap(nums, i, 0);
+	}
+}
 
 
 // 计数排序
@@ -159,38 +180,6 @@ void RadixSort(vector<int>& nums) {
 
 vector<int> sortArray(vector<int>& nums) {
 	int n = nums.size();
-	RadixSort(nums);
+	HeapSort(nums, n);
 	return nums;
 }
-
-
-
-
-
-////堆排序
-//void adjust(vector<int> &nums, int len, int index) {
-//	int left = 2 * index + 1; // index的左子节点
-//	int right = 2 * index + 2;// index的右子节点
-//
-//	int maxIdx = index;
-//	if (left<len && nums[left] > nums[maxIdx])     maxIdx = left;
-//	if (right<len && nums[right] > nums[maxIdx])     maxIdx = right;
-//
-//	if (maxIdx != index)
-//	{
-//		swap(nums[maxIdx], nums[index]);
-//		adjust(nums, len, maxIdx);
-//	}
-//
-//}
-//
-//// 堆排序
-//void HeapSort(vector<int> &nums, int size) {
-//	for (int i = size / 2 - 1; i >= 0; i--) {
-//		adjust(nums, size, i);
-//	}
-//	for (int i = size - 1; i >= 1; i--) {
-//		swap(nums[0], nums[i]);
-//		adjust(nums, i, 0);
-//	}
-//}
