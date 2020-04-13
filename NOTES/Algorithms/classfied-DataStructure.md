@@ -17,10 +17,21 @@
 ## 栈和队列
 
 - 双栈实现队列&& 双队列实现栈
+
 - **单调栈**：应用不广泛，主要用来实现Next Greater Element这一种典型问题。
-- **单调队列**：[239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
 
+- **单调队列**：[239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/
 
+- **优先队列**：
+
+  ```C++
+  // 升序队列
+  priority_queue <int, vector<int>, greater<int> > q;
+  // 降序队列
+  priority_queue <int, vector<int>, less<int> >q;
+  ```
+
+  
 
 ## 哈希表
 
