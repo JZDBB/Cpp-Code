@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SqlSolution", "SqlSolution\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sort", "Sort\Sort.vcxproj", "{D11E4CAB-15B6-4E4D-9F1B-5A24CF53173D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Search", "Search\Search.vcxproj", "{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{D11E4CAB-15B6-4E4D-9F1B-5A24CF53173D}.Release|x64.Build.0 = Release|x64
 		{D11E4CAB-15B6-4E4D-9F1B-5A24CF53173D}.Release|x86.ActiveCfg = Release|Win32
 		{D11E4CAB-15B6-4E4D-9F1B-5A24CF53173D}.Release|x86.Build.0 = Release|Win32
+		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Debug|x64.ActiveCfg = Debug|x64
+		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Debug|x64.Build.0 = Debug|x64
+		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Debug|x86.ActiveCfg = Debug|Win32
+		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Debug|x86.Build.0 = Debug|Win32
+		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Release|x64.ActiveCfg = Release|x64
+		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Release|x64.Build.0 = Release|x64
+		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Release|x86.ActiveCfg = Release|Win32
+		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
