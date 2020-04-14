@@ -24,6 +24,12 @@
     <ClCompile Include="744.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="278.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="34.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Search.h">

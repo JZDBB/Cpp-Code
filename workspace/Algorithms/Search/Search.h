@@ -6,3 +6,4 @@ using namespace std;
 
 int mySqrt(int x);
 char nextGreatestLetter(vector<char>& letters, char target);
+vector<int> searchRange(vector<int>& nums, int target);
