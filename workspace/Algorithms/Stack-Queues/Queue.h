@@ -23,3 +23,4 @@ private:
 };
 
 vector<int> maxSlidingWindow(vector<int>& nums, int k);
+vector<vector<int>> updateMatrix(vector<vector<int>>& matrix);

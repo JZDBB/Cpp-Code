@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Queue.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyQueue.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyStack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MinStack.h">
+    <ClInclude Include="Greedy.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,28 +23,16 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MyQueue.cpp">
+    <ClCompile Include="455.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MyStack.cpp">
+    <ClCompile Include="435.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="20.cpp">
+    <ClCompile Include="763.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="739.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="503.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="239.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1111.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="542.cpp">
+    <ClCompile Include="53.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

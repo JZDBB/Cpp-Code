@@ -30,6 +30,12 @@
     <ClCompile Include="34.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="153.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="540.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Search.h">

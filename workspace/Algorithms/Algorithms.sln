@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sort", "Sort\Sort.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Search", "Search\Search.vcxproj", "{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Greedy", "Greedy\Greedy.vcxproj", "{3872FACB-B6CB-431A-A5BD-E680281B90DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Release|x64.Build.0 = Release|x64
 		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Release|x86.ActiveCfg = Release|Win32
 		{4312737C-31E0-4DF6-8E8C-E2A6B00BF4D7}.Release|x86.Build.0 = Release|Win32
+		{3872FACB-B6CB-431A-A5BD-E680281B90DF}.Debug|x64.ActiveCfg = Debug|x64
+		{3872FACB-B6CB-431A-A5BD-E680281B90DF}.Debug|x64.Build.0 = Debug|x64
+		{3872FACB-B6CB-431A-A5BD-E680281B90DF}.Debug|x86.ActiveCfg = Debug|Win32
+		{3872FACB-B6CB-431A-A5BD-E680281B90DF}.Debug|x86.Build.0 = Debug|Win32
+		{3872FACB-B6CB-431A-A5BD-E680281B90DF}.Release|x64.ActiveCfg = Release|x64
+		{3872FACB-B6CB-431A-A5BD-E680281B90DF}.Release|x64.Build.0 = Release|x64
+		{3872FACB-B6CB-431A-A5BD-E680281B90DF}.Release|x86.ActiveCfg = Release|Win32
+		{3872FACB-B6CB-431A-A5BD-E680281B90DF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
