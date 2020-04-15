@@ -33,7 +33,7 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& matrix) {
 				else {
 					travered[dx][dy] = 1;
 					res[dx][dy] = len + 1;
-					Q.push(pair<int, vector<int>>(len+1, { dx, dy }))
+					Q.push(pair<int, vector<int>>(len + 1, { dx, dy }));
 				}
 			}
 		}
