@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{3872FACB-B6CB-431A-A5BD-E680281B90DF}</ProjectGuid>
-    <RootNamespace>Greedy</RootNamespace>
+    <ProjectGuid>{28E4BA57-50C5-43D1-AC9C-77E2332FADB7}</ProjectGuid>
+    <RootNamespace>Math</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,22 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Greedy.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="121.cpp" />
-    <ClCompile Include="122.cpp" />
-    <ClCompile Include="392.cpp" />
-    <ClCompile Include="406.cpp" />
-    <ClCompile Include="435.cpp" />
-    <ClCompile Include="452.cpp" />
-    <ClCompile Include="455.cpp" />
-    <ClCompile Include="53.cpp" />
-    <ClCompile Include="56.cpp" />
-    <ClCompile Include="605.cpp" />
-    <ClCompile Include="665.cpp" />
-    <ClCompile Include="763.cpp" />
-    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

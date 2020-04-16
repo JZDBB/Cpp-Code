@@ -10,3 +10,4 @@ int findContentChildren(vector<int>& g, vector<int>& s);
 int eraseOverlapIntervals(vector<vector<int>>& intervals);
 
 vector<int> partitionLabels(string S);
+int findMinArrowShots(vector<vector<int>>& points);

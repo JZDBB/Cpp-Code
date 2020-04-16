@@ -35,5 +35,29 @@
     <ClCompile Include="53.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="665.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="392.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="605.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="121.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="122.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="406.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="452.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="56.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
