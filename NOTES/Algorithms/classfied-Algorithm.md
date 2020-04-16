@@ -319,3 +319,52 @@ bool checkPossibility(vector<int>& nums) {
 
 ## 数学
 
+#### 素数分解
+
+每一个数都可以分解成素数的乘积，例如 84 = 2<sup>2</sup> \* 3<sup>1</sup> \* 5<sup>0</sup> \* 7<sup>1</sup> \* 11<sup>0</sup> \* 13<sup>0</sup> \* 17<sup>0</sup> \* …
+
+#### 整除
+
+令 x = 2<sup>m0</sup> \* 3<sup>m1</sup> \* 5<sup>m2</sup> \* 7<sup>m3</sup> \* 11<sup>m4</sup> \* …
+
+令 y = 2<sup>n0</sup> \* 3<sup>n1</sup> \* 5<sup>n2</sup> \* 7<sup>n3</sup> \* 11<sup>n4</sup> \* …
+
+如果$ x$ 整除 `y（y mod x == 0）`，则对于所有 $i， mi <= ni$。
+
+#### 最大公约数最小公倍数
+
+x 和 y 的最大公约数为：gcd(x,y) =  2<sup>min(m0,n0)</sup> \* 3<sup>min(m1,n1)</sup> \* 5<sup>min(m2,n2)</sup> \* ...
+
+x 和 y 的最小公倍数为：lcm(x,y) =  2<sup>max(m0,n0)</sup> \* 3<sup>max(m1,n1)</sup> \* 5<sup>max(m2,n2)</sup> \* ...
+
+```C++
+int gcd(int a, int b) {
+    return b == 0 ? a : gcd(b, a % b);
+}
+```
+
+最小公倍数为两数的乘积除以最大公约数。
+
+```C++
+int lcm(int a, int b) {
+    return a * b / gcd(a, b);
+}
+```
+
+#### 16进制
+
+```C++
+string toHex(int num) {
+	string hexs = "0123456789abcdef";
+	string res = "";
+	if (num == 0){
+		return "0";
+	}
+	while (res.size() < 8 && num){
+		res = hexs[num & 0xf] + res;
+		num >>= 4;
+	}
+	return res;
+}
+```
+

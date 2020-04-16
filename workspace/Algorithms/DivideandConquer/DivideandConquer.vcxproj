@@ -115,6 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="241.cpp" />
+    <ClCompile Include="95.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DivideConquer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
