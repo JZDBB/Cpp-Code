@@ -27,6 +27,24 @@
     <ClCompile Include="168.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="172.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="67.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="415.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="169.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="367.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="204.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math.h">
