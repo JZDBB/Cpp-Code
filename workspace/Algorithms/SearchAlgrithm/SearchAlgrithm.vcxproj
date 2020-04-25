@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{F0F53EED-4CFB-4D5A-AC77-05D3DB9C45D6}</ProjectGuid>
-    <RootNamespace>String</RootNamespace>
+    <ProjectGuid>{CEE6AE5E-E3FA-46E4-BF6B-CC6BDAFCD843}</ProjectGuid>
+    <RootNamespace>SearchAlgrithm</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,21 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1316.cpp" />
-    <ClCompile Include="151.cpp" />
-    <ClCompile Include="205.cpp" />
-    <ClCompile Include="242.cpp" />
-    <ClCompile Include="409.cpp" />
-    <ClCompile Include="466.cpp" />
-    <ClCompile Include="557.cpp" />
-    <ClCompile Include="647.cpp" />
-    <ClCompile Include="696.cpp" />
-    <ClCompile Include="8.cpp" />
-    <ClCompile Include="9.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="Search.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="string_func.h" />
+    <ClCompile Include="1091.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

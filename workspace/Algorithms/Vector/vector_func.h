@@ -3,6 +3,7 @@
 #include<unordered_map>
 #include<algorithm>
 #include<iostream>
+#include<queue>
 using namespace std;
 
 vector<int> twoSum(vector<int>& nums, int target);
@@ -20,3 +21,9 @@ bool searchMatrix(vector<vector<int>>& matrix, int target);
 vector<int> sortArray(vector<int>& nums);
 
 void SelectSort(vector<int>& nums, int n);
+
+int numberOfSubarrays(vector<int>& nums, int k);
+
+int reversePairs(vector<int>& nums);
+
+vector<vector<int>> permute(vector<int>& nums);

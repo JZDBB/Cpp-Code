@@ -118,15 +118,18 @@
     <ClInclude Include="vector_func.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1248.cpp" />
     <ClCompile Include="240.cpp" />
     <ClCompile Include="287.cpp" />
     <ClCompile Include="289.cpp" />
+    <ClCompile Include="46.cpp" />
     <ClCompile Include="55.cpp" />
     <ClCompile Include="566.cpp" />
     <ClCompile Include="645.cpp" />
     <ClCompile Include="697.cpp" />
     <ClCompile Include="766.cpp" />
     <ClCompile Include="912.cpp" />
+    <ClCompile Include="m51.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sum.cpp" />
   </ItemGroup>

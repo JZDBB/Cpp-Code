@@ -24,3 +24,5 @@ int countSubstrings(string s);
 int countBinarySubstrings(string s);
 
 int myAtoi(string str);
+
+int getMaxRepetitions(string s1, int n1, string s2, int n2);

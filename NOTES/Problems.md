@@ -133,12 +133,13 @@ int mid = (start + end) >>> 1
 
 [C++ STL之priority_queue优先队列](https://juejin.im/post/5b35a66051882574d5005fd9)
 
-排序
+排序重定义
 
 ```c++
-sort(begin(points), end(points),
-		[](const vector<int> &o1, const vector<int> &o2) {
-		return (o1[1] < o2[1]);
+struct point {int x;int y;};
+sort(P.begin(), P.end(), 
+		[](point &o1, point &o2) {
+		return o1.x < o2.x || (o1.x == o2.x && o1.y < o2.y);
 	});
 ```
 
