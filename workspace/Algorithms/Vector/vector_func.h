@@ -27,3 +27,14 @@ int numberOfSubarrays(vector<int>& nums, int k);
 int reversePairs(vector<int>& nums);
 
 vector<vector<int>> permute(vector<int>& nums);
+
+class MountainArray {
+private:
+	vector<int> arr;
+public:
+	void init(vector<int> m) { arr = m; };
+	int get(int index) { return arr[index]; };
+	int length() { return arr.size(); };
+};
+
+int findInMountainArray(int target, MountainArray &mountainArr);

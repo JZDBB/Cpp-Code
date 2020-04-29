@@ -118,6 +118,7 @@
     <ClInclude Include="vector_func.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1095.cpp" />
     <ClCompile Include="1248.cpp" />
     <ClCompile Include="240.cpp" />
     <ClCompile Include="287.cpp" />

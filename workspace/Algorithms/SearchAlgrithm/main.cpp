@@ -5,7 +5,7 @@ int main() {
 	int m = shortestPathBinaryMatrix(a);*/
 
 	vector<string> w = { "hot", "dot", "dog", "lot", "log", "cog" };
-	int a = ladderLength("hit", "cog", w);
+	int a = ladderLength2("hit", "cog", w);
 
 	
 
