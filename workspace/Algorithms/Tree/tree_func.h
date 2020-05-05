@@ -35,3 +35,6 @@ vector<int> postorderTraversal(TreeNode* root);
 TreeNode* sortedArrayToBST(vector<int>& nums);
 
 TreeNode* sortedListToBST(ListNode* head);
+
+bool isValidBST(TreeNode* root);
+vector<int> inorderTraversal(TreeNode* root);

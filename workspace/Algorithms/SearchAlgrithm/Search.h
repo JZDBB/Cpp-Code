@@ -6,7 +6,16 @@
 #include<queue>
 #include<unordered_set>
 #include<stack>
+#include<string>
 using namespace std;
+
+//Definition for a binary tree node.
+struct TreeNode {
+	int val;
+	TreeNode *left;
+	TreeNode *right;
+	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
 
 int shortestPathBinaryMatrix(vector<vector<int>>& grid);
 
