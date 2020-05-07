@@ -27,3 +27,12 @@ vector<vector<int>> pacificAtlantic(vector<vector<int>>& matrix);
 void solve(vector<vector<char>>& board);
 
 int maxAreaOfIsland(vector<vector<int>>& grid);
+
+vector<string> letterCombinations(string digits);
+vector<vector<int>> permuteUnique(vector<int>& nums);
+
+vector<vector<int>> combinationSum2(vector<int>& candidates, int target);
+
+vector<vector<string>> partition(string s);
+
+void solveSudoku(vector<vector<char>>& board);

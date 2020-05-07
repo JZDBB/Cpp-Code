@@ -47,5 +47,44 @@
     <ClCompile Include="695.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="257.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="93.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="17.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="47.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="77.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="39.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="40.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="216.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="78.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="90.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="131.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="51.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="37.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

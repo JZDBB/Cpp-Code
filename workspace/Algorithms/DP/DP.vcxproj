@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{CEE6AE5E-E3FA-46E4-BF6B-CC6BDAFCD843}</ProjectGuid>
-    <RootNamespace>SearchAlgrithm</RootNamespace>
+    <ProjectGuid>{69900694-96F2-40AB-8EE7-73CE7E22CC48}</ProjectGuid>
+    <RootNamespace>DP</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,31 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Search.h" />
+    <ClCompile Include="983.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1091.cpp" />
-    <ClCompile Include="127.cpp" />
-    <ClCompile Include="130.cpp" />
-    <ClCompile Include="131.cpp" />
-    <ClCompile Include="17.cpp" />
-    <ClCompile Include="200.cpp" />
-    <ClCompile Include="216.cpp" />
-    <ClCompile Include="257.cpp" />
-    <ClCompile Include="279.cpp" />
-    <ClCompile Include="37.cpp" />
-    <ClCompile Include="39.cpp" />
-    <ClCompile Include="40.cpp" />
-    <ClCompile Include="417.cpp" />
-    <ClCompile Include="47.cpp" />
-    <ClCompile Include="51.cpp" />
-    <ClCompile Include="547.cpp" />
-    <ClCompile Include="695.cpp" />
-    <ClCompile Include="77.cpp" />
-    <ClCompile Include="78.cpp" />
-    <ClCompile Include="90.cpp" />
-    <ClCompile Include="93.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="DP.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
