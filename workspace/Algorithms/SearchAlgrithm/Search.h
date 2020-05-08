@@ -36,3 +36,5 @@ vector<vector<int>> combinationSum2(vector<int>& candidates, int target);
 vector<vector<string>> partition(string s);
 
 void solveSudoku(vector<vector<char>>& board);
+
+int maximalSquare(vector<vector<char>>& matrix);
