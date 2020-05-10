@@ -185,3 +185,33 @@ bool canPartition(vector<int>& nums) {
 }
 ```
 
+
+
+### 最长公共子序列
+
+[1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/) 子序列类型的问题，穷举出所有结果不容易，而动态规划算法做的就是穷举 + 剪枝，所以只要涉及子序列问题，十有八九都需要动态规划来解决。
+
+
+
+### 编辑距离
+
+[72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
+
+<img src="img\72.jpg" height=250px>
+
+```C++
+int minDistance(string word1, string word2) {
+	int len1 = word1.size();  int len2 = word2.size();
+	vector<vector<int>> dp(len1 + 1, vector<int>(len2 + 1, 0));
+	for (int i = 0; i <= len1; i++) dp[i][0] = i;
+	for (int j = 0; j <= len2; j++) dp[0][j] = j;
+	for (int i = 1; i <= len1; i++) {
+		for (int j = 1; j <= len2; j++) {
+			if (word1[i - 1] == word2[j - 1]) dp[i][j] = dp[i - 1][j - 1];//注意word的取值范围
+			else dp[i][j] = min(min(dp[i - 1][j - 1] + 1, dp[i - 1][j] + 1), dp[i][j - 1] + 1);
+		}
+	}
+	return dp[len1][len2];
+}
+```
+
