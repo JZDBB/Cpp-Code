@@ -215,3 +215,76 @@ int minDistance(string word1, string word2) {
 }
 ```
 
+
+
+### 高楼鸡蛋
+
+- **状态：当前拥有的鸡蛋数** **`K`** **和需要测试的楼层数** **`N`**。随着测试的进行，鸡蛋个数可能减少，楼层的搜索范围会减小，这就是状态的变化。
+- **选择：选择哪层楼扔鸡蛋。**
+- **状态转移**
+  - **如果鸡蛋碎了**，鸡蛋的个数 `K` 减一，搜索的楼层区间从 `[1..N]` 变为 `[1..i-1]` 共 `i-1` 层楼；
+  - **如果鸡蛋没碎**，鸡蛋的个数 `K` 不变，搜索的楼层区间从 `[1..N]` 变为 `[i+1..N]` 共 `N-i` 层楼。
+
+```C++
+int superEggDropBS(int K, int N) {
+	if (K == 1) return N;  if (N == 1) return 1;
+	vector<vector<int>> dp(N + 1, vector<int>(K + 1, 0));
+	for (int i = 1; i <= N; i++) dp[i][1] = i;
+	for (int k = 1; k <= K; k++) dp[1][k] = 1;
+	for (int i = 2; i <= N; i++) {
+		for (int k = 2; k <= K; k++) {
+			int res = INT_MAX;int start = 1, end = i, mid; // 这一段改用二分查找做枚举
+			while (start <= end) {
+				mid = start + (end - start) / 2;
+				if (dp[mid - 1][k - 1] == dp[i - mid][k]) {
+					res = min(res, dp[mid - 1][k - 1] + 1);
+					break;
+				}
+				else if (dp[mid - 1][k - 1] > dp[i - mid][k]) {
+					end = mid - 1;
+					res = min(res, dp[mid - 1][k - 1] + 1);
+				}
+				else {
+					start = mid + 1;
+					res = min(res, dp[i - mid][k] + 1);
+				}
+			}
+			dp[i][k] = res;
+		}
+	}
+	return dp[N][K];
+}
+```
+
+#### 换一种思路
+
+- 状态： **`K`** **个鸡蛋，测试** **`m`** **次，最坏情况下最多能测试** **`N`** **层楼**。
+- 选择：
+  - **无论你在哪层楼扔鸡蛋，鸡蛋只可能摔碎或者没摔碎，碎了的话就测楼下，没碎的话就测楼上**。
+  - **无论你上楼还是下楼，总的楼层数 = 楼上的楼层数 + 楼下的楼层数 + 1（当前这层楼）**。
+
+- 转移方程：
+
+  ```
+  dp[k][m] = dp[k][m - 1] + dp[k - 1][m - 1] + 1
+  ```
+
+  **`dp[k][m - 1]`** **就是楼上的楼层数**，因为鸡蛋个数 `k` 不变，鸡蛋没碎，扔鸡蛋次数 `m` 减一；
+
+  **`dp[k - 1][m - 1]`** **就是楼下的楼层数**，因为鸡蛋个数 `k` 减一，鸡蛋碎了，同时扔鸡蛋次数 `m` 减一。
+
+  <img src="img/887-1.jpg" height=250px>
+
+```C++
+int superEggDrop(int K, int N) {
+    vector<vector<int>> dp(K+1, vector<int>(N+1));
+    int m = 0;
+    while(dp[K][m]<N){
+        m++;
+        for (int k = 1; k <= K; k++)
+            dp[k][m] = dp[k][m - 1] + dp[k - 1][m - 1] + 1;
+    }
+    return m;
+}
+```
+

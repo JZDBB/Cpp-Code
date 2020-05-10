@@ -115,8 +115,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="0-1bag.cpp" />
+    <ClCompile Include="1143.cpp" />
     <ClCompile Include="300.cpp" />
     <ClCompile Include="322.cpp" />
+    <ClCompile Include="416.cpp" />
+    <ClCompile Include="518.cpp" />
+    <ClCompile Include="72.cpp" />
+    <ClCompile Include="887.cpp" />
     <ClCompile Include="983.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

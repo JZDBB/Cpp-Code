@@ -10,3 +10,5 @@
 using namespace std;
 
 int lengthOfLIS(vector<int>& nums);
+
+int superEggDrop(int K, int N);
