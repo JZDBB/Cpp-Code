@@ -187,13 +187,13 @@ bool canPartition(vector<int>& nums) {
 
 
 
-### 最长公共子序列
+### 子序列问题
+
+#### 最长公共子序列
 
 [1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/) 子序列类型的问题，穷举出所有结果不容易，而动态规划算法做的就是穷举 + 剪枝，所以只要涉及子序列问题，十有八九都需要动态规划来解决。
 
-
-
-### 编辑距离
+#### 编辑距离
 
 [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
 
@@ -214,6 +214,31 @@ int minDistance(string word1, string word2) {
 	return dp[len1][len2];
 }
 ```
+
+#### 回文序列
+
+[516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) 涉及遍历顺序的改变典型
+
+**状态：在子串** **`s[i..j]`** **中，最长回文子序列的长度为** **`dp[i][j]`**
+
+<img src="img/516_1.jpg" height="250px">
+
+```C++
+int longestPalindromeSubseq(string s) {
+	int len = s.length();   if (len < 2) return len;
+	vector<vector<int>> dp(len, vector<int>(len, 0));
+	for (int i = 0; i < len; i++) dp[i][i] = 1;
+	for (int i = len-1; i >=0; i--) {
+		for (int j = i + 1; j < len; j++) {
+			if (s[i] == s[j]) dp[i][j] = dp[i + 1][j - 1] + 2;
+			else dp[i][j] = max(dp[i + 1][j], dp[i][j - 1]);
+		}
+	}
+	return dp[0][len-1];
+}
+```
+
+
 
 
 

@@ -375,10 +375,19 @@ string toHex(int num) {
 }
 ```
 
+#### 平方
 
+```C++
+/* 我们把这些贡献相乘，x∗x^4∗x^8∗x^64恰好等于 x^77 。而这些贡献的指数部分又是什么呢？它们都是 22 的幂次，这是因为每个额外乘的 xx 在之后都会被平方若干次。而这些指数 1，4，8 和 64，恰好就对应了77 的二进制表示 (1001101)_2(1001101) 2中的每个1！*/
+double myPow(double x, int n) { 
+        if(n==0) return 1; if(x==0||x==1) return x;
+        bool flag = false; long long m = n;double ans = 1; double x_ = x;
+        if(m<0) {flag = true;m = -m;}
+        while(m){
+            if(m%2) ans *= x_;
+            x_ *=x_;  m/=2;
+        }
+        return flag? 1.0/ans:ans;
+}
+```
 
-
-
-## 搜索算法
-
-BFS DFS
