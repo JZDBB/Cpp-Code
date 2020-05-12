@@ -240,8 +240,6 @@ int longestPalindromeSubseq(string s) {
 
 
 
-
-
 ### 高楼鸡蛋
 
 - **状态：当前拥有的鸡蛋数** **`K`** **和需要测试的楼层数** **`N`**。随着测试的进行，鸡蛋个数可能减少，楼层的搜索范围会减小，这就是状态的变化。
@@ -298,7 +296,7 @@ int superEggDropBS(int K, int N) {
 
   **`dp[k - 1][m - 1]`** **就是楼下的楼层数**，因为鸡蛋个数 `k` 减一，鸡蛋碎了，同时扔鸡蛋次数 `m` 减一。
 
-  <img src="img/887-1.jpg" height=250px>
+  <img src="img/887_1.jpg" height="250px">
 
 ```C++
 int superEggDrop(int K, int N) {
@@ -312,4 +310,28 @@ int superEggDrop(int K, int N) {
     return m;
 }
 ```
+
+
+
+### 股票买卖问题
+
+```C++
+/*for 状态1 in 状态1的所有取值：
+      for 状态2 in 状态2的所有取值：
+          for ...
+              dp[状态1][状态2][...] = 择优(选择1，选择2...) */
+
+// 状态有三：当前时间，至今最多股票交易次数，是否持有股票
+// 状态转移：买入，卖出，不变三种
+没有股票：dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1]+prices[i]);
+持有股票：dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0]-prices[i]);
+
+// base case
+dp[-1][k][0] = dp[i][0][0] = 0
+dp[-1][k][1] = dp[i][0][1] = -infinity//-prices[0]
+```
+
+[例题](../../workspace/Algorithms/DP/121.cpp)
+
+
 
