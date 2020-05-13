@@ -117,12 +117,18 @@
   <ItemGroup>
     <ClCompile Include="0-1bag.cpp" />
     <ClCompile Include="1143.cpp" />
+    <ClCompile Include="121.cpp" />
+    <ClCompile Include="198.cpp" />
+    <ClCompile Include="279.cpp" />
     <ClCompile Include="300.cpp" />
     <ClCompile Include="322.cpp" />
     <ClCompile Include="416.cpp" />
+    <ClCompile Include="516.cpp" />
     <ClCompile Include="518.cpp" />
+    <ClCompile Include="646.cpp" />
     <ClCompile Include="72.cpp" />
     <ClCompile Include="887.cpp" />
+    <ClCompile Include="91.cpp" />
     <ClCompile Include="983.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

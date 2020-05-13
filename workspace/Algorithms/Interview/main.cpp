@@ -2,7 +2,7 @@
 
 int main() {
 
-	vector<vector<int>> vec;
+	/*vector<vector<int>> vec;
 
 	vector<int> a;
 	a.push_back(1);
@@ -23,9 +23,10 @@ int main() {
 	vec.push_back(b);
 	vec.push_back(c);
 
-	rotate(vec);
+	rotate(vec);*/
 
-
+	vector<int> nums = { 3, 30, 34, 5, 9 };
+	string s = minNumber(nums);
 
 	return 0;
 }

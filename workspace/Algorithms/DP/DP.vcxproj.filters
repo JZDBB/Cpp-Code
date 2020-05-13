@@ -45,6 +45,24 @@
     <ClCompile Include="887.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="516.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="121.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="198.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="279.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="646.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="91.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DP.h">
