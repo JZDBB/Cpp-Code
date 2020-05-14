@@ -116,12 +116,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="0-1bag.cpp" />
+    <ClCompile Include="10.cpp" />
     <ClCompile Include="1143.cpp" />
     <ClCompile Include="121.cpp" />
     <ClCompile Include="198.cpp" />
     <ClCompile Include="279.cpp" />
     <ClCompile Include="300.cpp" />
     <ClCompile Include="322.cpp" />
+    <ClCompile Include="413.cpp" />
     <ClCompile Include="416.cpp" />
     <ClCompile Include="516.cpp" />
     <ClCompile Include="518.cpp" />

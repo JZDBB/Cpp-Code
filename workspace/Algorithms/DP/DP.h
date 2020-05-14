@@ -21,3 +21,5 @@ int lengthOfLIS(vector<int>& nums);
 int superEggDrop(int K, int N);
 
 int findLongestChain(vector<vector<int>>& pairs);
+
+bool isMatch(string s, string p);
