@@ -18,27 +18,16 @@ int main() {
 	p = p->next;
 	p->next = new ListNode(3);
 	p = p->next;
-	p->next = new ListNode(3);
-	p = p->next;
-	p->next = new ListNode(4);
-	p = p->next;
 	p->next = new ListNode(4);
 	p = p->next;
 	p->next = new ListNode(5);
+	/*p = p->next;
+	p->next = new ListNode(4);
+	p = p->next;
+	p->next = new ListNode(5);*/
+	p = reverseKGroup(l1, 2);
 
-	ListNode* head = deleteDuplicates(l1);
 
-	//ListNode* m = oddEvenList(l1);
-
-	//ListNode* l2 = new ListNode(5);
-	//p = l2;
-	//p->next = new ListNode(6);
-	//p = p->next;
-	//p->next = new ListNode(4);
-
-	//ListNode* m = addTwoNumbers2(l1, l2);
-	//ListNode* m = swapPairs(l1);
-	//bool a = isPalindrome(l1);
 
 
 	return 0;

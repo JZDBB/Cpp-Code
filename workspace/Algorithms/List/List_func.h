@@ -1,5 +1,6 @@
 #pragma once
 #include<stdio.h>
+#include<vector>
 using namespace std;
 
 struct ListNode {
@@ -29,3 +30,5 @@ ListNode* addTwoNumbers3(ListNode* l1, ListNode* l2);
 ListNode* oddEvenList(ListNode* head);
 
 ListNode* deleteDuplicates(ListNode* head);
+
+ListNode* reverseKGroup(ListNode* head, int k);
