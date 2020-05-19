@@ -391,3 +391,11 @@ double myPow(double x, int n) {
 }
 ```
 
+#### 不需要变量的两数交换
+
+```C++
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+```
+

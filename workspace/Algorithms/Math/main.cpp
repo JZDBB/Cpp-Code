@@ -3,7 +3,7 @@
 int main() {
 
 	/*string s = addStrings("1", "1");*/
-	int a = countPrimes(1500000);
+	bool a =isPowerOfFour(7);
 
 	return 0;
 }

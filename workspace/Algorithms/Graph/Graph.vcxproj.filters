@@ -14,4 +14,29 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="210.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="785.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="886.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="207.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="684.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

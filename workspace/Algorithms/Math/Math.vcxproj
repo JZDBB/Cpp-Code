@@ -119,10 +119,14 @@
     <ClCompile Include="168.cpp" />
     <ClCompile Include="169.cpp" />
     <ClCompile Include="172.cpp" />
+    <ClCompile Include="190.cpp" />
     <ClCompile Include="204.cpp" />
     <ClCompile Include="238.cpp" />
+    <ClCompile Include="268.cpp" />
+    <ClCompile Include="342.cpp" />
     <ClCompile Include="343.cpp" />
     <ClCompile Include="367.cpp" />
+    <ClCompile Include="371.cpp" />
     <ClCompile Include="405.cpp" />
     <ClCompile Include="415.cpp" />
     <ClCompile Include="462.cpp" />

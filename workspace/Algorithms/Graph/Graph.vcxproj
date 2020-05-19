@@ -115,6 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="graph.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="207.cpp" />
+    <ClCompile Include="210.cpp" />
+    <ClCompile Include="684.cpp" />
+    <ClCompile Include="785.cpp" />
+    <ClCompile Include="886.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
