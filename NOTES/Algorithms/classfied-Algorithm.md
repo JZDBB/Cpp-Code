@@ -399,3 +399,30 @@ b = a ^ b;
 a = a ^ b;
 ```
 
+[476. 数字的补数](https://leetcode-cn.com/problems/number-complement/)
+
+```C++
+int findComplement(int num) {
+    int temp = num, c = 0;
+    while(temp > 0){
+        temp >>= 1;
+        c =  (c << 1) + 1;
+    }
+    return num ^ c;
+}
+```
+
+[338. 比特位计数](https://leetcode-cn.com/problems/counting-bits/)
+
+```C++
+vector<int> countBits(int num) {
+    vector<int> res(num + 1);
+    res[0] = 0;
+    for (int i = 0; i <= num; i++) {
+        if (i % 2 == 0) res[i] = res[i / 2];
+        else res[i] = res[i - 1]+1;
+        }
+    return res;
+} // 二进制数特点
+```
+

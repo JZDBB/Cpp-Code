@@ -46,6 +46,10 @@
 
 **PS：哈希表常用在需要求和或者需要快速索引的代码中。**
 
+##### 哈希应用：
+
+- 前缀和+哈希表：[1371. 每个元音包含偶数次的最长子字符串](https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)、[560. 和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
+
 
 
 ## 树

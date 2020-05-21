@@ -3,7 +3,9 @@
 int main() {
 
 	/*string s = addStrings("1", "1");*/
-	bool a =isPowerOfFour(7);
+
+	vector<string> m = { "abcw", "baz", "foo", "bar", "xtfn", "abcdef" };
+	int a = maxProduct(m);
 
 	return 0;
 }

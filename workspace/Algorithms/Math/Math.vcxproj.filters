@@ -69,6 +69,12 @@
     <ClCompile Include="342.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="476.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="318.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math.h">
