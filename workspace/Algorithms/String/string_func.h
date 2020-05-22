@@ -29,3 +29,5 @@ int myAtoi(string str);
 int getMaxRepetitions(string s1, int n1, string s2, int n2);
 
 string removeDuplicates(string s, int k);
+
+string removeDuplicateLetters(string s);

@@ -38,3 +38,4 @@ vector<vector<string>> partition(string s);
 void solveSudoku(vector<vector<char>>& board);
 
 int maximalSquare(vector<vector<char>>& matrix);
+bool exist(vector<vector<char>>& board, string word);

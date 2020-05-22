@@ -8,7 +8,7 @@ int main() {
 	// int a = countBinarySubstrings("00110011");
 	//int a = myAtoi("-91283472332");
 	
-	string a = removeDuplicates("deeedbbcccbdaa", 3);
+	string a = removeDuplicateLetters("cbacdcbc");
 
 	return 0;
 }

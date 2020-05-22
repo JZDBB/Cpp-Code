@@ -23,6 +23,10 @@ int trap(vector<int>& height) {
 	int total = height.size() * height[left_max];
 	return left + right - total - sub;
 
+	
+}
+
+int trap2(vector<int>& height) {
 	// Ë«Ö¸Õë
 	int left = 0;
 	int right = height.size() - 1;
