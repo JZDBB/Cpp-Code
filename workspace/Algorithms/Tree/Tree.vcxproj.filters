@@ -117,12 +117,24 @@
     <ClCompile Include="98.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="105.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1367.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="211.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree_func.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="trie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WordDictionary.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClCompile Include="101.cpp" />
     <ClCompile Include="104.cpp" />
+    <ClCompile Include="105.cpp" />
     <ClCompile Include="108.cpp" />
     <ClCompile Include="109.cpp" />
     <ClCompile Include="110.cpp" />
@@ -124,8 +125,10 @@
     <ClCompile Include="112.cpp" />
     <ClCompile Include="124.cpp" />
     <ClCompile Include="129.cpp" />
+    <ClCompile Include="1367.cpp" />
     <ClCompile Include="144.cpp" />
     <ClCompile Include="145.cpp" />
+    <ClCompile Include="211.cpp" />
     <ClCompile Include="226.cpp" />
     <ClCompile Include="230.cpp" />
     <ClCompile Include="235.cpp" />
@@ -153,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="tree_func.h" />
     <ClInclude Include="trie.h" />
+    <ClInclude Include="WordDictionary.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
