@@ -7,8 +7,8 @@ int main() {
 	string a = reverseWords(s);*/
 	// int a = countBinarySubstrings("00110011");
 	//int a = myAtoi("-91283472332");
+	string a = minWindow("a", "a");
 	
-	string a = removeDuplicateLetters("cbacdcbc");
 
 	return 0;
 }

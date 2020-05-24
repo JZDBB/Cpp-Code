@@ -54,10 +54,9 @@ int main() {
 	/*vector<int> m = { 1, 2, 3 };
 	vector<vector<int>> a = permute(m);*/
 
-	vector<int> m = { 3,5,3,2,0 };
-	MountainArray mountainArr;
-	mountainArr.init(m);
-	int a = findInMountainArray(0, mountainArr);
+	vector<int> m = { 1,3 };
+	vector<int> n = { 2 };
+	double a = findMedianSortedArrays(m, n);
 
 	return 0;
 }
