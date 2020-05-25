@@ -75,6 +75,9 @@
     <ClCompile Include="318.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="offer-二进制.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math.h">

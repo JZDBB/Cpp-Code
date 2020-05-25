@@ -135,6 +135,7 @@
     <ClCompile Include="504.cpp" />
     <ClCompile Include="67.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="offer-二进制.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math.h" />
