@@ -66,6 +66,9 @@
     <ClCompile Include="4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="974.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vector_func.h">

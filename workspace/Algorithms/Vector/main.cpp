@@ -54,9 +54,8 @@ int main() {
 	/*vector<int> m = { 1, 2, 3 };
 	vector<vector<int>> a = permute(m);*/
 
-	vector<int> m = { 1,3 };
-	vector<int> n = { 2 };
-	double a = findMedianSortedArrays(m, n);
+	vector<int> m = { 4,5,0,-2,-3,1 };
+	int a = subarraysDivByK(m, 5);
 
 	return 0;
 }

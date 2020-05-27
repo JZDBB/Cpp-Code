@@ -41,3 +41,5 @@ public:
 int findInMountainArray(int target, MountainArray &mountainArr);
 
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2);
+
+int subarraysDivByK(vector<int>& A, int K);
