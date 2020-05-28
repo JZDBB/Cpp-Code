@@ -43,3 +43,5 @@ int findInMountainArray(int target, MountainArray &mountainArr);
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2);
 
 int subarraysDivByK(vector<int>& A, int K);
+
+vector<int> maxInWindows(const vector<int>& num, unsigned int size);

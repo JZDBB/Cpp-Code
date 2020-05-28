@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClCompile Include="1095.cpp" />
     <ClCompile Include="1248.cpp" />
+    <ClCompile Include="239.cpp" />
     <ClCompile Include="240.cpp" />
     <ClCompile Include="287.cpp" />
     <ClCompile Include="289.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="912.cpp" />
     <ClCompile Include="974.cpp" />
     <ClCompile Include="m51.cpp" />
+    <ClCompile Include="m57.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sum.cpp" />
   </ItemGroup>

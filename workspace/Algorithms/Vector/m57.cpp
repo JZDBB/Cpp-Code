@@ -1,7 +1,7 @@
 #include"vector_func.h"
 
 // 面试题57. 和为s的两个数字
-vector<int> twoSum(vector<int>& nums, int target) {
+vector<int> twoSum2(vector<int>& nums, int target) {
 	unordered_set<int> S;
 	for (int item : nums) {
 		if (S.count(target - item)) return { item, target - item };
@@ -16,7 +16,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
 		int s = nums[l] + nums[r];
 		if (s > target) r--;
 		else if (s < target) l++;
-		else return {l, r };
+		else return { nums[l], nums[r] };
 	}
 	return {};
 }

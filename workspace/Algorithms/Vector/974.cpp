@@ -2,14 +2,16 @@
 
 // 974. 和可被 K 整除的子数组
 int subarraysDivByK(vector<int>& A, int K) {
-	int sum = 0;
-	vector<int> m(K);
-	int res = 0;
-	m[0] = 1;
-	for (int i = 0; i < A.size(); i++) {
-		sum += A[i];
-		res += m[sum % K];
-		m[sum%K]++;
+	unordered_map<int, int> record = { {0, 1} };
+	int sum = 0, ans = 0;
+	for (int elem : A) {
+		sum += elem;
+		// 注意 C++ 取模的特殊性，当被除数为负数时取模结果为负数，需要纠正
+		int modulus = (sum % K + K) % K;
+		if (record.count(modulus)) {
+			ans += record[modulus];
+		}
+		++record[modulus];
 	}
-	return res;
+	return ans;
 }

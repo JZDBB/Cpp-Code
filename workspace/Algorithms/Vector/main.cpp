@@ -54,8 +54,8 @@ int main() {
 	/*vector<int> m = { 1, 2, 3 };
 	vector<vector<int>> a = permute(m);*/
 
-	vector<int> m = { 4,5,0,-2,-3,1 };
-	int a = subarraysDivByK(m, 5);
+	vector<int> m = { 2,3,4,2,6,2,5,1 };
+	vector<int> a = maxInWindows(m, 3);
 
 	return 0;
 }
