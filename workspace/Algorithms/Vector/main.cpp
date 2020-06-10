@@ -54,8 +54,11 @@ int main() {
 	/*vector<int> m = { 1, 2, 3 };
 	vector<vector<int>> a = permute(m);*/
 
-	vector<int> m = { 2,3,4,2,6,2,5,1 };
-	vector<int> a = maxInWindows(m, 3);
+	/*vector<int> m = { 2,3,4,2,6,2,5,1 };
+	vector<int> a = maxInWindows(m, 3);*/
+
+	int a = -2147483649;
+	cout << a;
 
 	return 0;
 }

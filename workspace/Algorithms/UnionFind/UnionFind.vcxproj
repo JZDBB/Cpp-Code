@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{71E3A513-9C08-4C0D-8D21-6567DAB047A9}</ProjectGuid>
-    <RootNamespace>Vector</RootNamespace>
+    <ProjectGuid>{6FCD7ABD-36FD-4588-B325-79E8386F2B9B}</ProjectGuid>
+    <RootNamespace>UnionFind</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,30 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="vector_func.h" />
+    <ClCompile Include="128.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1095.cpp" />
-    <ClCompile Include="1248.cpp" />
-    <ClCompile Include="239.cpp" />
-    <ClCompile Include="240.cpp" />
-    <ClCompile Include="287.cpp" />
-    <ClCompile Include="289.cpp" />
-    <ClCompile Include="4.cpp" />
-    <ClCompile Include="46.cpp" />
-    <ClCompile Include="55.cpp" />
-    <ClCompile Include="565.cpp" />
-    <ClCompile Include="566.cpp" />
-    <ClCompile Include="645.cpp" />
-    <ClCompile Include="697.cpp" />
-    <ClCompile Include="766.cpp" />
-    <ClCompile Include="912.cpp" />
-    <ClCompile Include="974.cpp" />
-    <ClCompile Include="m29.cpp" />
-    <ClCompile Include="m51.cpp" />
-    <ClCompile Include="m57.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="sum.cpp" />
+    <ClInclude Include="unionfind_fun.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
