@@ -60,5 +60,8 @@ int main() {
 	int a = -2147483649;
 	cout << a;
 
+
+	vector<int> b;
+
 	return 0;
 }

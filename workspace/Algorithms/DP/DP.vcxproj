@@ -139,6 +139,7 @@
     <ClCompile Include="887.cpp" />
     <ClCompile Include="91.cpp" />
     <ClCompile Include="983.cpp" />
+    <ClCompile Include="m46.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

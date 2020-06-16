@@ -595,3 +595,102 @@ string PrintMinNumber(vector<int> numbers) {
 }
 ```
 
+[表示数值的字符串]()
+
+```C++
+bool isNumeric(char* string){
+    if(string==NULL)  return false;
+    if(*string=='+'||*string=='-') string++;
+    if(*string=='\0')  return false;
+    int d=0,num=0,nume=0;
+    while(*string!='\0') {
+        if(*string>='0'&&*string<='9'){
+            string++; // 数字测试
+            num=1;
+        }
+        else if(*string=='.'){
+            if(d>0||nume>0) return false; // 如果之前有'e'或者之前有'.'
+            string++;
+            d=1;
+        }
+        else if(*string=='e'||*string=='E'){
+            if(num==0||nume>0)  return false; // 之前没有数字或者之前有'e'
+            string++;
+            nume = 1;
+            if(*string=='+'||*string=='-') string++;
+            if(*string=='\0')  return false; // 之后无数字
+        }
+        else return false;
+    }
+    return true;
+}
+```
+
+[正则化匹配]()
+
+```C++
+bool matchCore(char* str, char* pattern){
+    if(*str=='\0'&& *pattern=='\0') return true;
+    if(*pattern=='\0') return false;
+    if(*(pattern+1)=='*'){
+        if((*pattern=='.'&&*str!='\0')||*str==*pattern){
+            return matchCore(str+1, pattern+2) // 匹配单个不同字符
+                ||matchCore(str+1, pattern) // 匹配多个字符
+                ||matchCore(str, pattern+2); // 匹配0个字符
+        }
+        else return matchCore(str, pattern+2);
+    }
+    if((*pattern=='.'&&*str!='\0')||*str==*pattern){
+        return matchCore(str+1, pattern+1);
+    }
+    return false;
+}
+
+bool match(char* str, char* pattern){
+    if(str==nullptr||pattern==nullptr) return false;
+    return matchCore(str, pattern);
+}
+```
+
+[数组中的逆序对]()
+
+```C++
+int mergeSort(vector<int>& nums, vector<int>& tmp, int l, int r) {
+    if (l >= r) return 0;
+    int mid = (l + r) / 2;
+    int count = mergeSort(nums, tmp, l, mid) + mergeSort(nums, tmp, mid + 1, r);
+    int i = l, j = mid + 1, pos = l;
+    while (i <= mid && j <= r) {
+        if (nums[i] <= nums[j]) {
+            tmp[pos++] = nums[i++];
+            count += (j - (mid + 1));
+        }
+        else  tmp[pos++] = nums[j++];
+    }
+    for (int k = i; k <= mid; ++k) {
+        tmp[pos++] = nums[k];
+        count += (j - (mid + 1));
+    }
+    for (int k = j; k <= r; ++k) tmp[pos++] = nums[k];
+    copy(tmp.begin() + l, tmp.begin() + r + 1, nums.begin() + l);
+    return count;
+}
+
+int reversePairs(vector<int>& nums) {
+    int n = nums.size();
+    vector<int> tmp(n);
+    return mergeSort(nums, tmp, 0, n - 1);
+}
+```
+
+[孩子们的游戏(圆圈中最后剩下的数)]()
+
+```C++
+int LastRemaining_Solution(int n, int m){
+    if(n==0) return -1;
+    int s=0;
+    for(int i=2;i<=n;i++)  s=(s+m)%i;
+    return s;
+}
+```
+
