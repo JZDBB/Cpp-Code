@@ -78,6 +78,9 @@
     <ClCompile Include="m29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="48.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vector_func.h">
