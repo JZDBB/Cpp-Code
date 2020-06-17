@@ -38,3 +38,7 @@ TreeNode* sortedListToBST(ListNode* head);
 
 bool isValidBST(TreeNode* root);
 vector<int> inorderTraversal(TreeNode* root);
+
+string serialize(TreeNode* root);
+TreeNode* deserialize(string data);
+

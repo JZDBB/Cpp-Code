@@ -93,6 +93,9 @@
     <ClCompile Include="m46.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DP.h">

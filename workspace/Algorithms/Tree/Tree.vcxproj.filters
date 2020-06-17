@@ -126,6 +126,9 @@
     <ClCompile Include="211.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="297.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree_func.h">
